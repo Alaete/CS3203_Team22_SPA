@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\source\PKB\PKB.cpp">
+      <Filter>Source Files\PKB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\PKB\ConcreteClasses\PKB_Map_Assign.cpp">
+      <Filter>Source Files\PKB\Concrete Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\PKB\ConcreteClasses\PKB_Map_CallPrintReadStatement.cpp">
+      <Filter>Source Files\PKB\Concrete Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\PKB\ConcreteClasses\PKB_Map_Constant.cpp">
+      <Filter>Source Files\PKB\Concrete Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\PKB\ConcreteClasses\PKB_Map_Follows.cpp">
+      <Filter>Source Files\PKB\Concrete Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\PKB\ConcreteClasses\PKB_Map_IfWhile.cpp">
+      <Filter>Source Files\PKB\Concrete Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\PKB\ConcreteClasses\PKB_Map_ModifiesUses.cpp">
+      <Filter>Source Files\PKB\Concrete Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\PKB\ConcreteClasses\PKB_Map_NextStar.cpp">
+      <Filter>Source Files\PKB\Concrete Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\PKB\ConcreteClasses\PKB_Map_Parent.cpp">
+      <Filter>Source Files\PKB\Concrete Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\PKB\ConcreteClasses\PKB_Map_ProcedureVariable.cpp">
+      <Filter>Source Files\PKB\Concrete Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\PKB\ConcreteClasses\PKB_Map_StatementList.cpp">
+      <Filter>Source Files\PKB\Concrete Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Parser.cpp">
+      <Filter>Source Files\FrontEnd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QueryPreprocessor\Query.cpp">
+      <Filter>Source Files\PQL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QueryEvaluator\QueryDEInterface.cpp">
+      <Filter>Source Files\PQL\Query Evaluator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QueryEvaluator\QueryEvaluator.cpp">
+      <Filter>Source Files\PQL\Query Evaluator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QueryEvaluator\QueryPKBInterface.cpp">
+      <Filter>Source Files\PQL\Query Evaluator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QueryPreprocessor\QueryParser.cpp">
+      <Filter>Source Files\PQL\Query Preprocessor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QueryEvaluator\Optimiser.cpp">
+      <Filter>Source Files\PQL\Query Evaluator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\PKB\ConcreteClasses\PKB_Map_Affects.cpp">
+      <Filter>Source Files\PKB\Concrete Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\PKB\ConcreteClasses\PKB_Map_AffectsStar.cpp">
+      <Filter>Source Files\PKB\Concrete Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\PKB\ConcreteClasses\PKB_Map_AAstarCCstarFstarNNstarPstar.cpp">
+      <Filter>Source Files\PKB\Concrete Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\PKB\ConcreteClasses\PKB_Map_Node.cpp">
+      <Filter>Source Files\PKB\Concrete Classes</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\source\ShuntingYard.h" />
+    <ClInclude Include="..\source\PKB\AbstractClasses\PKB_Map_Base.h">
+      <Filter>Header Files\PKB\Abstract Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\PKB\AbstractClasses\PKB_Map_Integer_Integer.h">
+      <Filter>Header Files\PKB\Abstract Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\PKB\AbstractClasses\PKB_Map_Integer_PairStringString.h">
+      <Filter>Header Files\PKB\Abstract Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\PKB\AbstractClasses\PKB_Map_Integer_SetInteger.h">
+      <Filter>Header Files\PKB\Abstract Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\PKB\AbstractClasses\PKB_Map_Integer_SetString.h">
+      <Filter>Header Files\PKB\Abstract Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\PKB\AbstractClasses\PKB_Map_Integer_String.h">
+      <Filter>Header Files\PKB\Abstract Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\PKB\AbstractClasses\PKB_Map_String_SetInteger.h">
+      <Filter>Header Files\PKB\Abstract Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\PKB\AbstractClasses\PKB_Map_Any_SetAny.h">
+      <Filter>Header Files\PKB\Abstract Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\PKB\ConcreteClasses\PKB_Map_Assign.h">
+      <Filter>Header Files\PKB\Concrete Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\PKB\ConcreteClasses\PKB_Map_CallPrintReadStatement.h">
+      <Filter>Header Files\PKB\Concrete Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\PKB\ConcreteClasses\PKB_Map_Constant.h">
+      <Filter>Header Files\PKB\Concrete Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\PKB\ConcreteClasses\PKB_Map_Follows.h">
+      <Filter>Header Files\PKB\Concrete Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\PKB\ConcreteClasses\PKB_Map_IfWhile.h">
+      <Filter>Header Files\PKB\Concrete Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\PKB\ConcreteClasses\PKB_Map_ModifiesUses.h">
+      <Filter>Header Files\PKB\Concrete Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\PKB\ConcreteClasses\PKB_Map_NextStar.h">
+      <Filter>Header Files\PKB\Concrete Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\PKB\ConcreteClasses\PKB_Map_Parent.h">
+      <Filter>Header Files\PKB\Concrete Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\PKB\ConcreteClasses\PKB_Map_ProcedureVariable.h">
+      <Filter>Header Files\PKB\Concrete Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\PKB\ConcreteClasses\PKB_Map_StatementList.h">
+      <Filter>Header Files\PKB\Concrete Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\PKB\PKB.h">
+      <Filter>Header Files\PKB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\PKB\PKB_Util.h">
+      <Filter>Header Files\PKB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Parser.h">
+      <Filter>Header Files\FrontEnd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\DesignExtractor.h">
+      <Filter>Header Files\FrontEnd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\DesignExtractorBase.h">
+      <Filter>Header Files\FrontEnd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QueryUtil.h">
+      <Filter>Header Files\PQL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QueryPreprocessor\Query.h">
+      <Filter>Header Files\PQL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QueryPreprocessor\QueryParser.h">
+      <Filter>Header Files\PQL\Query Preprocessor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QueryEvaluator\QueryEvaluator.h">
+      <Filter>Header Files\PQL\Query Evaluator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QueryEvaluator\QueryDEInterface.h">
+      <Filter>Header Files\PQL\Query Evaluator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QueryEvaluator\QueryPKBInterface.h">
+      <Filter>Header Files\PQL\Query Evaluator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QueryEvaluator\Optimiser.h">
+      <Filter>Header Files\PQL\Query Evaluator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\PKB\ConcreteClasses\PKB_Map_Affects.h">
+      <Filter>Header Files\PKB\Concrete Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\PKB\ConcreteClasses\PKB_Map_AffectsStar.h">
+      <Filter>Header Files\PKB\Concrete Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\PKB\ConcreteClasses\PKB_Map_AAstarCCstarFstarNNstarPstar.h">
+      <Filter>Header Files\PKB\Concrete Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\PKB\ConcreteClasses\PKB_Map_Node.h">
+      <Filter>Header Files\PKB\Concrete Classes</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4f7dc4c6-46d4-4af2-b514-5d5741b36c07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{7271f6aa-c30b-4dbd-bb7f-38babd85defb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\PKB">
+      <UniqueIdentifier>{1afd80a7-00e4-4968-87d6-b474c426f62a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\PKB">
+      <UniqueIdentifier>{3f30e7e2-f4f0-4818-bed9-ae56ae2d2478}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\PKB\Abstract Classes">
+      <UniqueIdentifier>{d7e71937-7a79-4d04-9354-2acbe84933cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\PKB\Concrete Classes">
+      <UniqueIdentifier>{b353d597-161a-4dff-97bc-e961edd1a094}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\PKB\Concrete Classes">
+      <UniqueIdentifier>{b23c41d4-5ffc-4e9a-8a89-d11785e31f0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\PQL">
+      <UniqueIdentifier>{3d216c16-923f-4cc9-9b45-a893b75100dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\FrontEnd">
+      <UniqueIdentifier>{b9a622d5-790f-4285-b76b-320676892560}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\FrontEnd">
+      <UniqueIdentifier>{daa91eda-038d-4dfa-9cd9-c3b54d6e4be1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\PQL">
+      <UniqueIdentifier>{c5535a6f-a088-4b35-8268-661f89cd5ae0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\PQL\Query Preprocessor">
+      <UniqueIdentifier>{4826a322-c39b-43d4-bdd9-1e714087d42c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\PQL\Query Preprocessor">
+      <UniqueIdentifier>{f0b2827b-1d0a-403c-855a-0ef6de536149}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\PQL\Query Evaluator">
+      <UniqueIdentifier>{dec7210d-6e0e-4885-9541-b2c79c92385a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\PQL\Query Evaluator">
+      <UniqueIdentifier>{22602104-03d9-4956-af20-99d01b46d839}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

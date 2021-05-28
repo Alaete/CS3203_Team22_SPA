@@ -1,0 +1,130 @@
+1 - First wildcard, second factor (valid)
+assign a;
+Select a pattern a(_, "7")
+2
+5000
+2 - First wildcard, second factor (valid)
+assign as;
+Select as pattern as(_, "7")
+2
+5000
+3 - First wildcard, second expression, exact match (valid)
+assign a;
+Select a pattern a(_, "var1 + 1")
+8
+5000
+4 - First wildcard, second expression, exact match (valid)
+assign a;
+Select a pattern a(_, _"(var1 + 2 * x)"_)
+5
+5000
+5 - First wildcard, second expression, exact match (invalid; expression not in program)
+assign a;
+Select a pattern a(_, "2 + x")
+none
+5000
+6 - First wildcard, second expression, partial match (valid)
+assign a;
+Select a pattern a(_, _"2 * x"_)
+5, 7
+5000
+7 - First wildcard, second expression, partial match (valid)
+assign a;
+Select a pattern a(_, _"var1"_)
+4, 5, 8
+5000
+8 - First wildcard, second expression, partial match (invalid; pattern is incorrect though it is similar to line 5)
+assign a;
+Select a pattern a(_, _"var1 + 2"_)
+none
+5000
+9 - First wildcard, second expression, partial match (invalid; pattern is incorrect though it is similar to line 7)
+assign a;
+Select a pattern a(_, _"8 + 2"_)
+none
+5000
+10 - First wildcard, second expression, partial match (invalid)
+assign a;
+Select a pattern a(_, _"8 * 3"_)
+none
+5000
+11 - First wildcard, second incomplete expression, partial match (invalid)
+assign a;
+Select a pattern a(_, _"* 2"_)
+none
+5000
+12 - First wildcard, second expression, partial match (valid)
+assign a;
+Select a pattern a(_, _"27 - piko"_)
+18
+5000
+13 - First wildcard, second expression, partial match (valid)
+assign a;
+Select a pattern a(_, _"10 % 3"_)
+21
+5000
+14 - First wildcard, second expression, partial match (valid)
+assign a;
+Select a pattern a(_, _"(7 * (3 + y))"_)
+7
+5000
+15 - First wildcard, second wildcard (valid)
+assign a;
+Select a pattern a(_, _)
+2, 3, 4, 5, 7, 8, 13, 14, 17, 18, 21, 22, 25, 26, 27, 29, 30, 31
+5000
+16 - First synonym, second expression, exact match (valid)
+assign a; variable v;
+Select <a, v> pattern a(v, "piko + (27 - piko)")
+18 taro
+5000
+17 - First synonym, second expression, exact match (valid)
+assign a; variable v;
+Select <a, v> pattern a(v, "1 + 2 * 5")
+17 piko
+5000
+18 - First variableName, second expression, exact match (valid)
+assign a;
+Select a pattern a("var1", "7")
+2
+5000
+19 - First variableName, second expression, exact match (valid)
+assign a;
+Select a pattern a("grape", "0")
+22
+5000 
+20 - First variableName, second expression, exact match (valid)
+assign a;
+Select BOOLEAN pattern a("piko", "1 + 2 * 5")
+TRUE
+5000
+21 - First variableName, second expression, exact match (valid)
+assign a;
+Select a pattern a("var1", "7")
+2
+5000
+22 - First variableName, second expression, partial match (valid)
+assign a;
+Select a pattern a("pear", _"10 % 3"_)
+21
+5000
+23 - First variableName, second expression, partial match (valid)
+assign a;
+Select a pattern a("var2", _"2 * x"_)
+7
+5000
+24 - First variableName, second wildcard (valid)
+assign a;
+Select a pattern a("pear", _)
+21, 26, 31
+5000
+25 - First variableName, second wildcard (valid)
+assign a;
+Select a pattern a("var2", _)
+3, 7
+5000
+26 - First variableName, second wildcard (valid)
+assign a;
+Select a pattern a("y", _)
+4, 13
+5000

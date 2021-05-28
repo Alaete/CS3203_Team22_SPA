@@ -1,0 +1,81 @@
+1 - First statement number, second statement number (valid; checking while loop)
+
+Select BOOLEAN such that Next(1, 1)
+FALSE
+5000
+2 - First statement number, second statement number (valid)
+
+Select BOOLEAN such that Next(1, 2)
+TRUE
+5000
+3 - First statement number, second statement number (valid; checking if statement)
+
+Select BOOLEAN such that Next(2, 5)
+TRUE
+5000
+4 - First statement number, second statement number (valid; checking if statement)
+
+Select BOOLEAN such that Next(4, 5)
+FALSE
+5000
+5 - First statement number, second wildcard (valid; checking for out of bounds)
+
+Select BOOLEAN such that Next(5, 6)
+FALSE
+5000
+6 - First synonym, second statement number (valid)
+stmt s;
+Select s such that Next(s, 5)
+2
+5000
+7 - First statement number, second synonym (valid)
+stmt s;
+Select s such that Next(3, s)
+4 
+5000
+8 - First statement number, second synonym (valid)
+stmt s;
+Select s such that Next(2, s)
+3, 5 
+5000
+9 - First statement number, second synonym (valid)
+stmt s;
+Select s such that Next(4, s)
+1 
+5000
+10 - First statement number, second synonym (valid)
+stmt s;
+Select s such that Next(5, s)
+1 
+5000
+11 - First statement number, second wildcard (valid)
+
+Select BOOLEAN such that Next(1, _)
+TRUE 
+5000
+12 - First statement number, second wildcard (valid)
+
+Select BOOLEAN such that Next(4, _)
+TRUE 
+5000
+13 - First statement number, second wildcard (valid)
+
+Select BOOLEAN such that Next(5, _)
+TRUE 
+5000
+14 - First wildcard, second synonym (valid)
+stmt s; if ifs;
+Select s such that Next(s, ifs)
+1 
+5000
+15 - First synonym, second statement number (valid)
+stmt s; if ifs;
+Select s such that Next(s, 5)
+2 
+5000
+16 - First synonym, second statement number (valid)
+while w;
+Select w such that Next(w, 2)
+1 
+5000
+

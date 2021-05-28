@@ -1,0 +1,60 @@
+procedure gabbie {
+	call james;				
+	while (w < a) {
+		call james;
+		while (d != s) {
+			w = a * 10;
+			a = w / 4;
+			print w;
+			read a;
+		}
+	}
+	
+	while ( w != (10/s+3)) {
+		a = a;
+		s = s - 1;
+		d = 10;
+		call shannon;
+	}		
+	a = d;
+	print a;
+	read d;
+}
+
+procedure james {
+	call shannon;
+	e = a;
+	if ( a > 2) then {
+		r = a;
+		print cl;
+		read a;
+	} else {
+		read e;
+	}
+	call joanna;
+	call mark;
+	
+	while ( (cl >= 100) || (4 > e) ) {
+		cl = e * q + p;
+		
+		if ( e < 2) then {
+			call joanna;
+		} else {
+			call mark;
+			e = q / t;
+		}
+	}
+}
+
+procedure joanna {
+	q = c;
+
+}
+
+procedure shannon {
+	w = a;
+}
+
+procedure mark {
+	q = q;
+}

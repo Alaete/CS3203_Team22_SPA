@@ -1,0 +1,56 @@
+Variables for pen: var1, var2, x, y, z
+Variables for pineapple: piko, taro
+Variables for apple: someVariableName, pear, grape
+
+procedure pen {
+    read x;														//1
+    var1 = 7;													//2
+    var2 = 8 * 2;												//3
+    y = var1 * x;												//4
+    z = var2 * (var1 + 2 * x) - y;								//5
+    
+    if(var1 <= 10) then {											//6
+        var2 = (var2 * 8 + 2 * x) + (7 * (3 + y));				//7
+        var1 = var1 + 1;										//8
+    } else 
+	{
+		print var1												//9
+	}
+
+    while (x < 100) {											//10
+        if (y <= 200) then {											//11
+            call pineapple;										//12
+            y = y + 10;											//13
+        }
+		else{
+			x = x * 2;											//14
+		}		
+    }
+	print x;													//15
+	print y;													//16
+}
+
+procedure pineapple {
+    piko = 1 + 2 * 5;											//17
+    taro = piko + (27 - piko);									//18
+    call apple;													//19
+}
+
+procedure apple {
+	read someVariableName;										//20
+	pear = 3 + 4 * (1 + 2 * (10 % 3));							//21
+	grape = 0;													//22
+	if (someVariableName > 10) then {							//23
+		while (someVariableName < 100) {						//24
+			someVariableName = someVariableName * 2;			//25
+			pear = pear + 1;									//26
+		}
+		grape = grape + 1;										//27
+	} else {
+		while (someVariableName < 200) {						//28
+			someVariableName = someVariableName + 20;			//29
+			grape = grape + 2;									//30
+		}
+		pear = pear + 2;										//31
+	}
+}

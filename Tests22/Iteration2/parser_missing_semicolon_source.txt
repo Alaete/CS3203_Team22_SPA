@@ -1,0 +1,59 @@
+procedure main {
+    print Line47Missing;
+	print  J;
+    if ( 6 + 6 < 57) then {
+        read  Sa;
+        while ( 79 == Hg) {
+            if (!( ( jO > xg) && ( 45 - 97 == J))) then {
+                xg = jO + 45 - 5 / 9;
+                while ( 45 >= o + xn) {
+                    yV = o - V * cj;
+                }
+            } else {
+                print  V;
+            }
+            read  jO;
+            print  x;
+            if ( (!( v >= 35)) || ( ( 5 < J) && ( 57 > 97))) then {
+                print  V;
+                if ( (!( Sa <= jO - xg)) && (!( 9 == 45))) then {
+                    if (!( ( o != 79) && ( 97 >= 5))) then {
+                        read  J;
+                    } else {
+                        print  x;
+                    }
+                } else {
+                    o = 5 * V;
+                }
+            } else {
+                print  xg;
+            }
+            print  v;
+        }
+        J = mA * 5;
+        if ( 5 - xn != v) then {
+            cj = 45 - 97 / mA;
+        } else {
+            xg = 57 + mA + yV;
+        }
+        print  jO;
+        read  V;
+        if ( ( ( 45 + x > 97) || ( 28 < 28)) || (!( Sa < 57 - V))) then {
+            if (!( 79 + 3 >= 97 + v)) then {
+                while ( 57 + v <= 3) {
+                    if ( 35 - 57 >= Ui) then {
+                        read  cj;
+                    } else {
+                        Yg = xn * mA
+                    }
+                }
+            } else {
+                print  o;
+            }
+        } else {
+            read  Ui;
+        }
+    } else {
+        print  jO;
+    }
+print i; }

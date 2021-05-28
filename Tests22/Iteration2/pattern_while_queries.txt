@@ -1,0 +1,55 @@
+1 - First synonym, second wildcard (Valid)
+while w; variable v;
+Select BOOLEAN pattern w(v, _)
+TRUE
+5000
+2 - First synonym, second wildcard (Valid)
+while w; variable v;
+Select w.stmt# pattern w(v, _)
+2, 4, 6, 7, 14, 20, 29, 36
+5000
+3 - First variableName, second wildcard (Valid)
+while w; 
+Select w pattern w("K", _)
+2, 36, 14
+5000
+4 - First variableName, second wildcard (Valid)
+while w; 
+Select w pattern w("G", _)
+4, 7, 14
+5000
+5 - First variableName, second wildcard (Valid)
+while w; 
+Select w pattern w("DZ", _)
+6, 7
+5000
+6 - First variableName, second wildcard (Valid)
+while w; 
+Select w pattern w("F", _)
+14, 20
+5000
+7 - First variableName, second wildcard (Valid)
+while w; 
+Select w pattern w("I", _)
+6, 7, 20, 29
+5000
+8 - First variableName, second wildcard (Valid)
+while w; 
+Select w pattern w("RY", _)
+7
+5000
+9 - First variableName, second wildcard (Valid)
+while w; 
+Select w pattern w("u", _)
+4, 20
+5000
+10 - First variableName, second wildcard (Invalid)
+while w; 
+Select w pattern w("R", _)
+none
+5000
+11 - First variableName, second wildcard (Invalid)
+while w; 
+Select w pattern w("KX", _)
+none
+5000

@@ -1,0 +1,52 @@
+procedure pen {
+    read x;														
+    var1 = 7;													
+    var2 = 8 * 2;												
+    y = var1 * x;												
+    z = var2 * (var1 + 2 * x) - y;								
+    
+    if (var1 < 10) then {											
+        var2 = (var2 * 8 + 2 * x) + (7 * (3 + y));				
+        var1 = var1 + 1;										
+    } 
+	else { 
+        print var1;
+    }
+
+    while (x < 100) {											
+        if (y <= 200) then {											
+            call pineapple;										
+            y = y + 10;											
+        }
+		else{
+			x = x * 2;
+		}		
+    }
+	print x;													
+	print y;													
+}
+
+procedure pineapple {
+    piko = 1 + 2 * 5;											
+    taro = piko + (27 - piko);									
+    call apple;													
+}
+
+procedure apple {
+	read someVariableName;										
+	pear = 3 + 4 * (1 + 2 * (10 % 3));							
+	grape = 0;													
+	if (someVariableName > 10) then {							
+		while (someVariableName < 100) {						
+			someVariableName = someVariableName * 2;			
+			pear = pear + 1;									
+		}
+		grape = grape + 1;										
+	} else {
+		while (someVariableName < 200) {						
+			someVariableName = someVariableName + 20;			
+			grape = grape + 2;									
+		}
+		pear = pear + 2;										
+	}
+}

@@ -1,0 +1,38 @@
+procedure main {
+    print  j;										
+    read  j;										
+    if ( 32 > I) then {								
+        print  U;									
+        read  j;									
+    } else {
+        read  p;									
+        print  Hv;									
+    }
+    if ( ( 14 != Hv) || ( 2 != 46)) then {			
+        if ( j < U) then {							
+            read  I;								
+            read  p;								
+        } else {
+            while (!( 2 <= 2)) {					
+                while (!( 14 <= 46)) {				
+                    read  p;						
+                    p = 32 + j;						
+                }
+                read  j;							
+            }
+            read  j;								
+        }
+    } else {
+        print  Hv;									
+    }	
+	print i; 										
+}	
+
+procedure first {
+	while (i <= j) {								
+		read x;										
+		print z;									
+		i = i + 1;									
+		jk = i + x;									
+	}
+}

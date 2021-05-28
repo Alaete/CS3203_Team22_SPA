@@ -1,0 +1,59 @@
+variables in one: apple, starfruit, orange, pear, pineapple
+variables in two: bread, sushi, burger, sandwich, speaker
+variables in three: earphone, speaker, dac, amp 
+variables in four: reddit, facebook, discord, snapchat, instagram
+constants: 5, 7, 0, 3, 10, 4, 20, 2, 8, 1, 30, 9, 6, 80, 69
+
+procedure one {
+	read apple;										//1
+	starfruit = orange * 5 - 7;						//2
+	pear = starfruit  + 0 - 3 * pineapple; 			//3
+	
+	orange = pineapple * 3;							//4
+	call three;										//5
+	pineapple = orange - 5 + starfruit;				//6
+	
+}
+
+procedure two {
+	burger = speaker + 3;							//7
+	
+	while (bread < 10) {							//8
+		sandwich = sandwich * 10;					//9
+		bread = 10 * 4 + (burger / 10);				//10
+		if (sushi != 20) then {						//11
+			print sushi;							//12
+			read sandwich;							//13
+		} else {
+			burger = 5 + (2 - bread);				//14
+		}
+	}
+	
+	read speaker;									//15
+}
+
+procedure three {
+	read dac;										//16
+	speaker = dac * 8 + 3;							//17
+	call two;										//18
+	amp = speaker + 4;								//19
+	print amp; 										//20
+}
+
+procedure four {
+	reddit = 1;										//21
+	facebook = reddit * 3 + discord;				//22
+	print snapchat;									//23
+	
+	if (instagram < 30) then {						//24
+		read facebook;								//25
+		discord = facebook * 9;						//26
+	} else {
+		print facebook;								//27
+		snapchat = 2 * reddit;						//28
+		facebook = 0;								//29
+		instagram = facebook + snapchat;			//30
+	}
+	
+	instagram = snapchat % 6 + 2 * 80 + 69;			//31
+}

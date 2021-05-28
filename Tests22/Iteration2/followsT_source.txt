@@ -1,0 +1,58 @@
+procedure main {
+    while (!( ( 8 > 5) && ( EW == g))) {																				
+        Jj = 16 + a + Os % 1;																							
+        g = h + Dn;																										
+        print  Sa;																										
+        if (!( ( g != hN) && ( 5 + 16 <= 8))) then {																	
+            h = gq % 42;																								
+        } else {	
+            Jj = 42 - hN + 8 / 94;																						
+            read  x;																									
+            EW = g - 16 - Sa;																							
+        }
+        f = Dn + h + ae;																								
+        while (!( a > 9)) {																								
+            Os = f - 94 - gq / ae;																						
+            if ( ( ( ae <= 12) || ( 94 >= 16)) || ( ( 12 != Sa) || ( W <= Sa + 8))) then {								
+                hN = 9 - 48 - 5 * Os;																					
+            } else {
+                Sa = 13 - 48 + h * Os;																					
+            }
+            Sa = h + R - 1;																								
+        }
+        read  EW;																										
+        print  g;																										
+        read  W;																										
+    }
+    print  Dn;																											
+    print  Sa;																											
+    while ( ( ( 12 + Os >= 16 + f) && ( 8 >= R)) && ( ( 16 + ae >= Os - 1) && ( 5 == Dn + 94))) {						
+        if ( ( ( 42 >= Jj - 16) || ( 5 > 48)) || ( ( 1 == a) || ( 12 < ae))) then {										
+            print  Jj;																									
+            if ( ( ( ae - 16 >= ae) || ( 48 + EW >= 48 - 1)) || ( ( 42 - R > 9 + Os) && ( Sa < 1))) then {				
+                while ( ( ( 12 < 16 - g) && ( 94 > EW)) && (!( h >= W))) {												
+                    read  Os;																							
+                    print  Dn;																							
+                    read  Os;																							
+                }
+                if ( R == 12) then {																					
+                    print  Os;																							
+                    read  g;																							
+                } else {
+                    print  Dn;																							
+                }
+            } else {
+                print  Sa;																								
+            }
+        } else {
+            read  Dn;																									
+        }
+    }
+	print i; 																											
+}
+
+procedure second {
+	call main;																											
+	read x;																												
+	print z;																											
+}

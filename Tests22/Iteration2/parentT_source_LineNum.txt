@@ -1,0 +1,33 @@
+procedure main {
+    print  C;										//1
+    read  vu;										//2
+    print  Q;										//3
+    if (!( 1 <= Rk)) then {							//4
+        read  KO;									//5
+        C = 91;										//6
+        while (!( 69 <= 9)) {						//7
+            Q = 91 + KO;							//8
+            print  vu;								//9
+        }
+        print C;									//10							
+        read Q;										//11	
+        read C;										//12			
+    } else {
+        print  KO;									//13
+        print  Q;									//14
+        while ( ( KO == vu) && ( C == KO)) {		//15
+            KO = 1 - Q;								//16
+            if (!( 1 != 9)) then {					//17
+                C = 91;								//18
+            } else {
+                read  vu;							//19
+            }
+        }
+    }
+	print i; 										//20
+	if (copper < 40) then {							//21
+		a = b;										//22
+	} else { 
+		read ruby;									//23
+	}
+}

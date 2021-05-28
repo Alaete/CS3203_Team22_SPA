@@ -1,0 +1,53 @@
+procedure Hc {
+    print  TG;                                            //1
+    while ( 42 > 4) {                                     //2
+        call  K;                                          //3
+        M = 6;                                            //4
+        hH = 74 + 42;                                     //5
+        hH = 42 + kA;                                     //6
+        TG = 6 - 4;                                       //7
+        read  TG;                                         //8
+        hH = 42 + 74;                                     //9
+    }
+    print  M;                                             //10
+}
+
+procedure I {
+    read  kA;                                             //11
+    read  hH;                                             //12
+    print  hH;                                            //13
+    while ( 4 > 6) {                                      //14
+        J = M + 6;                                        //15
+        if ( ( 6 != 42) && ( TG == M)) then {             //16
+            call  K;                                      //17
+        } else {
+            if ( ( M <= 74) || ( kA > TG)) then {         //18
+                hH = J;                                   //19
+                call  K;                                  //20
+            } else {
+                J = J + 74;                               //21
+                read TG;                                  //22
+                hH = TG + J;                              //23
+            }
+        }
+    }
+}
+
+procedure K {
+    while ( hH >= M) {                                    //24
+        read  TG;                                         //25
+        if ( ( 6 > kA) && ( 42 >= M)) then {              //26
+            if ( ( M >= M) && ( TG >= 42)) then {         //27
+                M = 74 + 42;                              //28
+            } else {
+                print  hH;                                //29
+            }
+        } else {
+            TG = J;                                       //30
+            kA = 6 - 6;                                   //31
+        }
+        kA = 4 - 42;                                      //32
+        read  J;                                          //33
+    }
+}
+

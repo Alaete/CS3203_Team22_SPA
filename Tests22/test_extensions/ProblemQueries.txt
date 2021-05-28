@@ -1,0 +1,5 @@
+22 - AffectsBip 
+stmt s1;
+Select s1 such that AffectsBip(32, s1)
+34,27
+5000

@@ -1,0 +1,22 @@
+procedure main {
+    print Line10Missing;
+	while ( ( 44 != 69) || ( 23 > 3)) {
+        d = 3 - 8;
+        read  X;
+        T = X - 23;
+    }
+    print  X;
+    X = 44 + 44;
+    if ( ( X != 69) && ( 8 >= 44) then {
+        print  d;
+        print  X;
+        X = 3;
+        print  d;
+        read  Y;
+        read  Y;
+    } else {
+        Y = 3 + d;
+        print  T;
+        read  Y;
+    }
+print i; }

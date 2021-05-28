@@ -1,0 +1,9 @@
+procedure Ma1n {
+    var1 = 5;
+    y = 1 + 2;
+    z = var1 * y + (2 * y) / 2;	
+    read y;
+    print z;
+    a = 6;
+    b = (z + var1) * 3 - (var1 - 1 % 5) / y;
+}

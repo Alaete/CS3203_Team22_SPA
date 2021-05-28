@@ -1,0 +1,39 @@
+procedure mos {
+    R = 84 + pB;								//1
+    pb = o + 3;									//2
+    while ( ( l <= l) || ( 84 > R)) {			//3
+        read  R;								//4
+        print  o;								//5
+        while ( ( 7 <= 1) && ( pb != l)) {		//6
+            read  l;							//7
+			someVar = 20 * 40;					//8
+        }
+        if ( 7 == 8) then {						//9
+            pb = R - l;							//10
+			print pb;							//11
+        } else {
+            read  o;							//12
+        }
+    }
+    if ( 1 == 84) then {						//13
+        while ( ( pb != pb) || ( l >= 7)) {		//14
+            while (!( 1 <= 8)) {				//15
+                print  pB;						//16
+            }
+            o = 7 - o;							//17
+            pB = 3;								//18
+        }
+    } else {
+        read  o;								//19
+    }
+	
+	macs = R + 20;								//20
+	read kfc;									//21
+	print bk;									//22
+}
+
+procedure subway {
+	print lettuce;								//23
+	olives = cucumber + lettuce;				//24
+	call mos;									//25
+}

@@ -1,0 +1,305 @@
+1 - Affects, First stmt#, second stmt#, does not exist, return diff (Valid)
+stmt s;
+Select s such that Affects(8, 14)
+none
+5000
+2 - Affects, First stmt#, second stmt#, return diff (Valid)
+constant c;
+Select c.value such that Affects(8, 9)
+1, 2, 3, 4, 5, 10, 20, 69, 100
+5000
+3 - Affects, First stmt#, second synonym, return BOOLEAN (Valid)
+assign a;
+Select BOOLEAN such that Affects(50, a)
+FALSE
+5000
+4 - Affects, First synonym, second stmt#, return BOOLEAN (Valid)
+stmt s;
+Select BOOLEAN such that Affects(s, 54)
+FALSE
+5000
+5 - Affects, Both synonyms, return BOOLEAN (Valid)
+stmt s; prog_line n;
+Select BOOLEAN such that Affects(s, n)
+TRUE
+5000
+6 - Affects, First stmt#, second synonym (Valid)
+assign a;
+Select a such that Affects(8, a)
+9, 10, 11
+5000
+7 - Affects, First stmt#, second synonym (Valid)
+stmt s;
+Select s such that Affects(10, s)
+11, 12, 13, 15
+5000
+8 - Affects, First stmt#, second synonym (Valid)
+assign a;
+Select a such that Affects(11, a)
+39,15,29,50
+5000
+9 - Affects, First stmt#, second synonym (Valid)
+assign a;
+Select a such that Affects(13, a)
+15, 30
+5000
+10 - Affects, First stmt#, second synonym (Valid)
+prog_line n;
+Select n such that Affects(12, n)
+15, 19, 25, 29, 38, 39, 50
+5000
+11 - Affects, First stmt#, second synonym (Valid)
+assign a;
+Select a such that Affects(9, a)
+10, 15, 22
+5000
+12 - Affects, First stmt#, second synonym (Valid)
+assign a;
+Select a such that Affects(16, a)
+39,50,35,51
+5000
+13 - Affects, First stmt#, second synonym (Valid)
+assign a;
+Select a such that Affects(19, a)
+none
+5000
+14 - Affects, First stmt#, second stmt#, return different (Valid)
+constant c;
+Select c such that Affects(29, 29)
+1, 2, 3, 4, 5, 10, 20, 69, 100
+5000
+15 - Affects, First stmt#, second stmt#, return different (Valid)
+procedure p;
+Select p such that Affects(30, 30)
+one, two, three
+5000
+16 - Affects, First stmt#, second synonym (Valid)
+assign a;
+Select a such that Affects(29, a)
+29, 33, 39, 50
+5000
+18 - Affects, First stmt#, second stmt#, does not exist (Valid)
+call c;
+Select c such that Affects(17, 19)
+none
+5000
+19 - Affects, First stmt#, second stmt#, does not exist (Valid)
+print p;
+Select p such that Affects(28, 36)
+none
+5000
+20 - Affects, First synonym, second stmt#, does not exist (Valid)
+assign a;
+Select c such that Affects(a, 20)
+none
+5000
+21 - Affects, First synonym, second stmt#, does not exist (Valid)
+assign a; 
+Select a such that Affects(a, 21)
+none
+5000
+22 - Affects, First synonym, second stmt#, does not exist (Valid)
+assign a;
+Select a such that Affects(a, 24)
+none
+5000
+23 - Affects, First synonym, second stmt#, does not exist (Valid)
+assign a;
+Select a such that Affects(24, a)
+none
+5000
+24 - Affects, First stmt#, second synonym (Valid)
+assign a;
+Select a such that Affects(38, a)
+30, 39, 42, 50
+5000
+25 - Affects, First stmt#, second synonym (Valid)
+assign a;
+Select a such that Affects(22, a)
+25, 36, 38, 50
+5000
+26 - Affects, First stmt#, second synonym (Valid)
+assign a;
+Select a such that Affects(25, a)
+32
+5000
+27 - Affects, First stmt#, second synonym (Valid)
+assign a;
+Select a such that Affects(30, a)
+30, 39, 42, 50
+5000
+28 - Affects, First stmt#, second synonym (Valid)
+assign a;
+Select a such that Affects(39, a)
+50
+5000
+29 - Affects, First stmt#, second synonym (Valid)
+assign a; 
+Select a such that Affects(42, a)
+50
+5000
+30 - Affects, First stmt#, second synonym (Valid)
+assign a;
+Select BOOLEAN such that Affects(50, a)
+FALSE
+5000
+31 - Affects, First stmt#, second synonym (Valid)
+assign a;
+Select a such that Affects(51, a)
+none
+5000
+32 - Affects, First synonym, second stmt# (Valid)
+assign a;
+Select a such that Affects(a, 29)
+11, 12, 29
+5000
+33 - Affects, First synonym, second synonym (Valid)
+assign a;
+Select a such that Affects(a, a)
+29, 30
+5000
+34 - Affects, First synonym, second synonym (Valid)
+assign a; prog_line n;
+Select a such that Affects(a, n)
+8, 9, 10, 11, 12, 13, 14, 15, 16, 22, 25, 29, 30, 32, 33, 38, 39, 42
+5000 
+35 - Affects, First synonym, second synonym (Valid) 
+assign a; prog_line n;
+Select n such that Affects(a, n)
+9, 10, 11, 12, 13, 15, 19, 22, 25, 29, 30, 32, 33, 35, 36, 38, 39, 42, 50, 51
+5000
+36 - Affects*, First stmt#, second stmt# (Valid)
+assign a;
+Select a such that Affects*(28, 29)
+none
+5000
+37 - Affects*, First stmt#, second stmt# (Valid)
+stmt s;
+Select s such that Affects*(17, 18)
+none
+5000
+38 - Affects*, First synonym, second stmt# (Valid)
+prog_line n;
+Select n such that Affects*(n, 9)
+8
+5000
+39 - Affects*, First stmt#, second synonym (Valid)
+assign a; 
+Select a such that Affects*(8, a)
+9, 10, 11, 12, 13, 15, 19, 22, 25, 29, 30, 32, 33, 36, 38, 39, 42, 50
+5000
+40 - Affects*, First stmt#, second synonym (Valid)
+stmt s;
+Select s such that Affects*(13, s)
+15, 30, 39, 42, 50
+5000
+41 - Affects*, First stmt#, second synonym (Valid)
+prog_line n;
+Select n such that Affects*(16, n)
+39, 50, 51, 35
+5000
+42 - Affects*, First stmt#, second synonym (Valid)
+stmt s;
+Select s such that Affects*(9, s)
+10, 11, 12, 13, 15, 19, 22, 25, 29, 30, 32, 33, 36, 38, 39, 42, 50
+5000
+43 - Affects*, First stmt#, second synonym (Valid)
+assign a;
+Select a such that Affects*(10, a)
+11, 12, 13, 15, 19, 25, 29, 30, 32, 33, 38, 39, 42, 50
+5000
+44 - Affects*, First stmt#, second synonym (Valid)
+assign a;
+Select a such that Affects*(11, a)
+15, 29, 30, 32, 33, 38, 39, 42, 50
+5000
+45 - Affects*, First stmt#, second synonym (Valid)
+assign a;
+Select a such that Affects*(12, a)
+15, 19, 25, 29, 30, 32, 33, 38, 39, 42, 50
+5000
+46 - Affects*, First stmt#, second synonym (Valid)
+assign a;
+Select a such that Affects*(14, a)
+15, 30, 39, 42, 50
+5000
+47 - Affects*, First stmt#, second synonym (Valid)
+assign a;
+Select a such that Affects*(15, a)
+30, 39, 42, 50
+5000
+48 - Affects*, First stmt#, second synonym (Valid)
+assign a;
+Select BOOLEAN such that Affects*(19, a)
+FALSE
+5000
+49 - Affects*, First stmt#, second synonym (Valid)
+assign a;
+Select a such that Affects*(22, a)
+25, 30, 32, 36, 38, 39, 42, 50
+5000
+50 - Affects*, First stmt#, second synonym (Valid)
+assign a;
+Select a such that Affects*(25, a)
+30, 32, 38, 39, 42, 50
+5000
+51 - Affects*, First stmt#, second synonym (Valid)
+assign a;
+Select a such that Affects*(29, a)
+29, 30, 32, 33, 38, 39, 42, 50
+5000
+52 - Affects*, First stmt#, second synonym (Valid)
+assign a;
+Select a such that Affects*(30, a)
+30, 39, 42, 50
+5000
+53 - Affects*, First stmt#, second synonym (Valid)
+assign a;
+Select a such that Affects*(32, a)
+38, 30, 39, 42, 50
+5000
+54 - Affects*, First stmt#, second synonym (Valid)
+assign a;
+Select a such that Affects*(33, a)
+30, 32, 38, 39, 42, 50
+5000
+55 - Affects*, First stmt#, second synonym (Valid)
+assign a;
+Select a such that Affects*(35, a)
+none
+5000
+56 - Affects*, First stmt#, second synonym (Valid)
+assign a;
+Select a such that Affects*(36, a)
+none
+5000
+57 - Affects*, First stmt#, second synonym (Valid)
+assign a;
+Select a such that Affects*(38, a)
+30, 39, 42, 50
+5000
+58 - Affects*, First stmt#, second synonym (Valid)
+assign a;
+Select a such that Affects*(39, a)
+50
+5000
+59 - Affects*, First stmt#, second synonym (Valid)
+assign a;
+Select a such that Affects*(42, a)
+50
+5000
+60 - Affects*, First stmt#, second synonym (Valid)
+assign a;
+Select a such that Affects*(50, a)
+none
+5000
+61 - Affects*, First stmt#, second stmt# (Valid)
+procedure p;
+Select p such that Affects*(33, 30)
+one, two, three
+5000
+62 - Affects*, First stmt#, second stmt# (Valid)
+stmt s;
+Select s such that Affects*(36, 39)
+none
+5000

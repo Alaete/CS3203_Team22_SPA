@@ -1,0 +1,5 @@
+60 - Boolean Pattern If Next* with (Valid)
+if ifs; stmt s; prog_line n; variable v; stmt s1;
+Select BOOLEAN pattern ifs(v, _, _) such that Next*(n, n) with ifs.stmt# = s.stmt# such that Parent(s, n) 
+TRUE
+5000

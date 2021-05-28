@@ -1,0 +1,330 @@
+1 - First Calls, second Calls, 2 common synonyms (Valid)
+procedure p1, p2;
+Select p1 such that Calls(p1, p2) and Calls(p1, p2)
+first, second
+5000
+2 - First Calls, second Calls, 1 common synonym (Valid)
+procedure p1, p2, p3;
+Select p1 such that Calls(p1, p2) and Calls(p1, p3)
+first, second
+5000
+3 - First Calls, second Calls, 1 common synonym (Valid)
+procedure p1, p2, p3;
+Select p3 such that Calls(p1, p2) and Calls(p2, p3)
+third
+5000
+4 - First Calls, second Calls, 1 common synonym (Valid)
+procedure p1, p2;
+Select p2 such that Calls(p1, p2) and Calls(p2, _)
+second
+5000
+5 - First Calls, second Calls, 0 common synonym (Valid)
+procedure p1, p2, p3;
+Select p1 such that Calls(p1, "second") and Calls(p2, p3)
+first
+5000
+6 - First Calls, second Calls, 0 common synonym (Valid)
+procedure p1, p2, p3;
+Select BOOLEAN such that Calls("first", p1) and Calls(p2, p3)
+TRUE
+5000
+7 - First Calls, second Calls, 0 common synonym (Valid)
+procedure p;
+Select p such that Calls("second", p) such that Calls("first", _)
+third
+5000
+8 - First Calls, second Calls, 0 common synonym, 1 no ans (Valid)
+procedure p;
+Select p such that Calls("third", _) and Calls(p, "second")
+none
+5000
+9 - Calls and Calls*, 2 common synonyms (Valid)
+procedure p, p1;
+Select p such that Calls(p, p1) and Calls*(p, p1)
+first, second
+5000
+10 - Calls and Calls*, 1 common synonym (Valid)
+procedure p;
+Select p such that Calls(p, "second") and Calls*(_, "third")
+first
+5000
+11 - Calls and Calls*, 1 common synonym (Valid)
+procedure p;
+Select p.procName such that Calls*(p, "third") and Calls(p, _)
+first, second
+5000
+12 - Calls and Calls*, 1 common synonym (Valid)
+procedure p;
+Select p.procName such that Calls*("first", p) such that Calls(p, _)
+second
+5000
+13 - Calls* and Calls*, 2 common synonyms (Valid)
+procedure p1, p2;
+Select p1 such that Calls*(p1, p2) and Calls*(p1, p2)
+first, second
+5000
+14 - Calls* and Calls*, 1 common synonym (Valid)
+procedure p; 
+Select p such that Calls*(p, "second") such that Calls*(p, "third")
+first
+5000
+15 - Calls* and Calls* 1 common synonym (Valid)
+procedure p;
+Select p such that Calls*("second",p) and Calls*("first", p)
+third
+5000
+16 - Calls* and Calls* 0 common synonym (Valid)
+procedure p;
+Select p such that Calls*("first", p) and Calls*("second", _)
+second, third
+5000
+17 - Calls* and Calls* and Calls* (Valid)
+procedure p1, p2, p3, p4, p5;
+Select p1 such that Calls*(p1, p2) and Calls*(p2, p3) and Calls*(p3, p4)
+none
+5000
+18 - Modifies, with, and (Valid)
+call c; variable v; procedure p;
+Select BOOLEAN such that Modifies(c, v) with c.procName = p.procName and p.procName = "second"
+TRUE
+5000
+19 - Modifies and Calls and Uses (Valid)
+stmt s; assign a; procedure p1, p2;
+Select <a.stmt#, p2.procName> such that Modifies(a, "x") and Calls(p1, p2) and Uses(s, "x")
+21 second, 21 third
+5000
+20 - Modifies and Calls and Modifies (Valid)
+procedure p1, p2; variable v;
+Select <p1, p2> such that Modifies(p1, "var2") and Calls(p1,p2) and Modifies(p2, v)
+first second,second third
+5000
+21 - Modifies and Calls* and Modifies (Valid)
+stmt s; read r; variable v; procedure p1, p2;
+Select BOOLEAN such that Modifies(r, "first") and Calls*(p1, p2) and Modifies(p1, "x")
+TRUE
+5000
+22 - Uses and Calls* and Modifies (Valid)
+stmt s; procedure p1, p2;
+Select p1 such that Uses(p1, "var1") and Calls*(p1, p2) and Modifies(p2, "is")
+first,second
+5000
+23 - Uses and Calls* and Modifies, 1 no result (Valid)
+stmt s; procedure p1, p2;
+Select s such that Uses(p1, "ba") and Calls*(p2, p1) and Modifies(p2, "ds")
+none
+5000
+24 - With With (Valid)
+stmt s; print p; assign a;
+Select p with p.stmt# = 5 with p.varName = "d"
+5
+5000
+25 - With With With (Valid)
+read r; variable v;
+Select r with r.stmt# = 12 with r.varName = v.varName with v.varName = "f"
+12
+5000
+26 - With and Uses (Valid)
+stmt s; assign a;
+Select a with a.stmt# = 37 such that Uses(a, "var2")
+37
+5000
+27 - With and Uses (Invalid; uses "and")
+stmt s; assign a;
+Select a with a.stmt# = 37 and Uses(a, "var2")
+none
+5000
+28 - With and Uses (Valid)
+print p; variable v;
+Select <p, v.varName> with v.varName = "t" such that Uses(p,v)
+18 t
+5000 
+29 - With, such that Modifies, 1 common synonym (Valid)
+stmt s; read r;
+Select <r.varName, s> with s.stmt# = r.stmt# such that Modifies(r, "var4")
+var4 39
+5000
+30 - With, such that Modifies, 1 common synonym, 1 no result (Valid)
+stmt s; if ifs;
+Select s with s.stmt# = ifs.stmt# such that Modifies(ifs, "x")
+3
+5000
+31 - With, such that Modifies, With (Valid)
+stmt s; read r; variable v;
+Select <s,r.varName> with s.stmt#= r.stmt# such that Modifies(r,v) with v.varName="z"
+27 z
+5000
+32 - With, such that Modifies, With, such that Uses (Valid)
+assign a; stmt s; variable v;
+Select s with s.stmt#= a.stmt# such that Modifies(a,v) with v.varName="x" such that Uses(a,v)
+21
+5000
+33 - With, such that Modifies, With, such that Uses (Valid)
+assign a; stmt s; variable v;
+Select s with s.stmt#= a.stmt# such that Modifies(a,v) with v.varName="d" such that Uses(a,v)
+none
+5000
+34 - With, such that Modifies, With, such that Uses (Valid)
+assign a; stmt s; variable v;
+Select BOOLEAN with s.stmt#= a.stmt# such that Modifies(a,v) with v.varName="d" such that Uses(a,v)
+FALSE
+5000
+35 - With, such that Parent*, With (Valid)
+stmt s; while w; if ifs;
+Select ifs.stmt# with w.stmt#= 15 such that Parent*(ifs, w) with s.stmt#=ifs.stmt#
+3, 7
+5000
+36 - With, such that Parent*, Follows (Valid)
+stmt s; if ifs; while w; assign a;
+Select w.stmt# with ifs.stmt# = 7 such that Parent*(ifs, a) and Follows(a, w)
+15, 17
+5000
+37 - With, such that Parent*, Follows (Valid)
+stmt s; if ifs; while w; assign a;
+Select <a, w.stmt#> with ifs.stmt# = 7 such that Parent*(ifs, a) and Follows(a, w)
+14 15, 16 17
+5000
+38 - With Pattern With (Valid)
+assign a; stmt s; variable v;
+Select <a, v> with a.stmt# = s.stmt# pattern a(v, _) with v.varName = "y"
+2 y, 16 y
+5000
+39 - With Pattern With (Valid)
+stmt s; variable v; assign a;
+Select a with a.stmt# = s.stmt# pattern a(v, _"f * 3"_) with v.varName = "t"
+6
+5000
+40 - With Pattern With (Valid)
+stmt s; variable v; assign a;
+Select a with a.stmt# = s.stmt# pattern a(v, _"x % z"_) with v.varName = "t"
+none
+5000
+41 - With Pattern With Such that Modifies (Valid)
+assign a; stmt s; variable v;
+Select a with a.stmt# = s.stmt# pattern a(v, _"20 * 4"_) with v.varName = "fass" such that Modifies("third", v)
+51
+5000
+42 - With Pattern With Such that Modifies; tuple output (Valid)
+assign a; stmt s; variable v;
+Select <a, v> with a.stmt# = s.stmt# pattern a(v, _"20 * 4"_) with v.varName = "fass" such that Modifies("third", v)
+51 fass
+5000
+43 - With Pattern With Such that Modifies, Boolean output (Valid)
+assign a; stmt s; variable v;
+Select BOOLEAN with a.stmt# = s.stmt# pattern a(v, _"20 * 4"_) with v.varName = "fass" such that Modifies("third", v)
+TRUE
+5000
+44 - With Pattern With Such that Modifies With (Valid)
+assign a; stmt s; variable v; procedure p;
+Select a with a.stmt# = s.stmt# pattern a(v, _"20 * 4"_) with v.varName = "fass" such that Modifies(p, v) with p.procName = "third"
+51
+5000
+45 - With Pattern With Such that Modifies With (Valid)
+assign a; stmt s; variable v; procedure p;
+Select <a, v> with a.stmt# = s.stmt# pattern a(v, _"20 * 4"_) with v.varName = "fass" such that Modifies(p, v) with p.procName = "third"
+51 fass
+5000
+46 - With Pattern With Such that Modifies With (Valid)
+assign a; stmt s; variable v; procedure p;
+Select BOOLEAN with a.stmt# = s.stmt# pattern a(v, _"20 * 4"_) with v.varName = "fass" such that Modifies(p, v) with p.procName = "third"
+TRUE
+5000
+47 - With Pattern With Such that Modifies and Uses With (Valid)
+assign a; stmt s; variable v; procedure p;
+Select a with a.stmt# = s.stmt# pattern a(v, _"20 * 4"_) with v.varName = "fass" such that Modifies(p, v) and Uses(p, v) with p.procName = "third"
+51
+5000
+48 - With Pattern With Such that Modifies and Uses With (Valid)
+assign a; stmt s; variable v; procedure p;
+Select <a, v.varName> with a.stmt# = s.stmt# pattern a(v,_"20 * 4"_) with v.varName = "fass" such that Modifies(p, v) and Uses(p, v) with p.procName = "third"
+51 fass
+5000
+49 - With Pattern With Such that Modifies and Uses With (Valid)
+assign a; stmt s; variable v; procedure p;
+Select BOOLEAN with a.stmt# = s.stmt# pattern a(v,_"20 * 4"_) with v.varName = "fass" such that Modifies(p, v) and Uses(p, v) with p.procName = "third"
+TRUE
+5000
+50 - Modifies and Uses (Valid)
+procedure p; variable v; 
+Select p such that Modifies    (p,      "x"  ) and     Uses(p   ,    v)
+first
+5000
+51 - Pattern, with, such that Modifies, with, such that Follows (Valid)
+assign a; variable v; procedure p;
+Select a pattern a(v, _"3 * x"_) with v.varName = "z" such that Modifies(p,v) with p.procName = "first" such that Follows(a, 15)
+14
+5000
+52 - Pattern, with, such that Modifies, with, such that Follows (Valid)
+assign a; variable v; procedure p;
+Select BOOLEAN pattern a(v, _"3 * x"_) with a.stmt# = 14 such that Modifies(p,v) with p.procName = "first" such that Follows(a, 15)
+TRUE
+5000
+53 - Pattern, with, such that Modifies, with, such that Follows (Valid)
+assign a; variable v; procedure p; if ifs;
+Select BOOLEAN pattern a(v, _"3 * x"_) with v.varName = "z" such that Modifies(p,v) with p.procName = "first" such that Follows(a, ifs)
+FALSE
+5000
+54 - Pattern, with, such that Modifies, with, such that Follows and Follows* (Valid)
+assign a; variable v; procedure p;
+Select BOOLEAN pattern a(v, _"3 * x"_) with a.stmt# = 14 such that Modifies(p,v) with p.procName = "first" such that Follows(a, 15) and Follows*(a, _)
+TRUE
+5000
+55 - Pattern, with, such that Modifies, with, such that Follows and Next* (Valid)
+assign a; variable v; procedure p; stmt s; read r;
+Select BOOLEAN pattern a(v, _"3*20"_) with a.stmt# = s.stmt# such that Modifies(p, v) with p.procName = "second" such that Follows(r, a) and Next*(r, a)
+FALSE
+5000
+56 - boolean Uses Calls pattern Modifies (Valid) 
+variable v; procedure p1, p2; assign a;
+Select BOOLEAN such that Uses(p1, v) and Calls(p2, p1) pattern a(v, _) such that Modifies(p1, v)
+TRUE
+5000
+57 - Uses Uses Calls With (valid)
+variable v; procedure p, p1;
+Select p1.procName such that Uses(p, "d") such that Uses(p1, v) such that Calls(p, p1) with p.procName = "first"
+second
+5000
+58 - pattern with Uses Parent Follows Next (Valid)
+assign a; stmt s; variable v; if ifs; print pn; while w;
+Select a pattern a(ifs, _) with a.stmt# = s.stmt# such that Uses(s, v) and Parent(w, _) and Follows(a, w) and Next(w, _)
+none
+5000
+59 - with Follows Pattern Parent Calls* (Valid)
+variable v; while w; procedure p1, p2; prog_line n; if ifs; stmt s; 
+Select w with s.stmt# = n such that Follows(w, ifs) pattern ifs(v, _, _) such that Parent*(w, s) such that Calls*(p1, p2)
+30
+5000
+60 - Tuple Next* with Uses (Valid)
+print p; variable v; prog_line n1, n2;
+Select <v, p> such that Next*(n1, n2) with p.stmt# = n1 such that Uses(p, v)
+d 5,f 9,z 11,t 18,first 24,someOtherLongVarName 35,ds 45,ba 48,ce 52
+5000
+61 - tuple pattern Follows* with Parent 2 common synonym(Valid)
+if ifif; variable v; read r; stmt s; stmt s1; 
+Select <ifif, r> pattern ifif(v, _, _) such that Follows*(s, r) with v.varName = r.varName such that Parent(ifif, s1)
+3 12,8 12
+5000
+62 - tuple Modifies Parent* with pattern pattern (Valid)
+call c; print p; if ifs; assign a; while w;
+Select <ifs, a> such that Modifies(a, _) and Parent*(ifs, _) with c.procName = "third" and p.stmt# = 18 pattern w("x", _) and a(_, _"20"_)
+8 6,8 28,8 38,8 42,8 51,7 6,7 28,7 38,7 42,7 51,22 6,22 28,22 38,22 42,22 51,3 6,3 28,3 38,3 42,3 51,36 6,36 28,36 38,36 42,36 51,44 6,44 28,44 38,44 42,44 51
+5000
+63 - multiple tuple Uses Modifies Follows Parent Uses Calls* (Valid)
+assign a1, a2, a3; stmt s1, s2, s3; variable v1, v2, v3; procedure p1, p2;
+Select <s1, s2, v2> such that Uses(s3, v1) and Modifies(s3, "z") and Follows(s1, s2) and Parent(s3, s1) and Uses(s2, v1) such that Calls*(p1, p2)
+7 21 f,8 14 f,7 21 y,5 6 first,21 22 someOtherLongVarName,6 7 d,14 15 var1,14 15 a,14 15 ce,21 22 ee,7 21 ee,14 15 x,14 15 cs,14 15 ee,27 28 ee,6 7 var1,21 22 fass,6 7 x,21 22 f,6 7 ee,21 22 d,14 15 ba,8 14 ce,5 6 f,7 21 t,14 15 t,8 14 x,14 15 first,8 14 z,8 14 first,21 22 t,7 21 fass,7 21 x,21 22 ba,21 22 z,5 6 var4,14 15 f,8 14 cs,21 22 ce,5 6 y,21 22 y,27 28 var3,27 28 is,8 14 b,7 21 someVeryLongVarName,27 28 ce,6 7 y,14 15 var4,8 14 a,8 14 var3,21 22 var4,27 28 cs,6 7 f,14 15 var3,27 28 b,5 6 z,7 21 is,27 28 fass,21 22 is,8 14 someOtherLongVarName,8 14 ds,14 15 y,5 6 var1,14 15 ds,8 14 var2,7 21 var2,7 21 d,6 7 b,27 28 var4,5 6 x,6 7 is,6 7 cs,6 7 ds,21 22 someVeryLongVarName,7 21 var4,21 22 var3,6 7 var4,27 28 d,14 15 fass,5 6 a,7 21 someOtherLongVarName,6 7 first,5 6 ce,6 7 ba,8 14 var1,14 15 someVeryLongVarName,7 21 var1,5 6 var3,5 6 b,27 28 ba,6 7 someOtherLongVarName,6 7 someVeryLongVarName,6 7 var2,5 6 ds,27 28 someOtherLongVarName,21 22 x,5 6 ee,27 28 a,14 15 is,21 22 ds,7 21 b,14 15 d,5 6 is,27 28 first,8 14 d,8 14 is,14 15 var2,8 14 ba,7 21 ds,27 28 var1,8 14 var4,7 21 a,6 7 z,5 6 d,6 7 ce,5 6 fass,14 15 b,6 7 var3,27 28 var2,6 7 a,21 22 var1,27 28 t,8 14 ee,21 22 b,21 22 cs,7 21 var3,27 28 x,5 6 someVeryLongVarName,5 6 ba,8 14 fass,21 22 var2,14 15 someOtherLongVarName,14 15 z,27 28 someVeryLongVarName,5 6 someOtherLongVarName,27 28 ds,7 21 ba,5 6 var2,21 22 a,7 21 ce,6 7 fass,21 22 first,7 21 first,8 14 y,27 28 f,5 6 cs,5 6 t,27 28 y,8 14 t,6 7 t,7 21 cs,8 14 someVeryLongVarName,7 21 z,27 28 z
+5000
+64 - with Follows Pattern Parent Calls* (Valid)
+variable v; while w; prog_line n; if ifs; stmt s; procedure p1, p2;
+Select w with s.stmt# = n such that Follows(w, ifs) pattern ifs(v, _, _) such that Parent*(w, s) such that Calls*(p1, p2)
+30
+5000
+65 - single tuple Modifies 2 common synonym (Valid)
+prog_line n; variable v; procedure p, q;
+Select <p.procName> such that Modifies(n, v) and Modifies(p, v) such that Calls*(p, q)
+first,second
+5000
+66 - Uses Modifies Calls* pattern (Valid)
+procedure p, p1; assign a; variable v; while w;
+Select v such that Uses(p, v) such that Modifies(p1, v) and Calls*(p1, p) pattern w(v, _)
+is,var1,var2,var3,var4
+5000

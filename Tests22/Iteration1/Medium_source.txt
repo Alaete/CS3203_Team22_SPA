@@ -1,0 +1,51 @@
+procedure main  {
+      while ( (  99857  <= GYtk)  ||  ( ( yQl <= GYtk) && ( 97 >= ZI)))  {
+             read  D;
+            print   QrrKU;
+              read    zCsY;
+             if (  (!( TgZd <= TV))  && (  ( 81723  <= 7488)  ||  (  GYtk  >=  81723)))  then {
+                      read   ZI;
+                 while ( (  (  D  + 81723  > D)  && ( Bn == 97)) ||  ( 28  -  28  != 18323))  {
+                     if  (!(  81723  <=  28 -  81723)) then  {
+                             print   D;
+                         }  else  {
+                              TKJ = TV * 81723;
+                                  print    TV;
+                                Bn =  7488  / 1;
+                              read    TV;
+                          }
+                        while ( (!(  28  >=  99857)) ||  (  ( HBhD <=  81723 -  HBhD) ||  (  HBhD  != TgZd -  qGf)))  {
+                             read   GYtk;
+                       }
+                        print   D;
+                        read   eLEkt;
+                     }
+                    zCsY  =  QrrKU  - D;
+                   if  (  (  ( TV <= 81723)  && ( TKJ  <= 81723))  && (!( 7488  <= eLEkt -  81723))) then {
+                        print    TgZd;
+                      qGf = 99857 - 1 +  18323  %  18323;
+                   }  else  {
+                    print   eLEkt;
+                     print    zCsY;
+                         print   TgZd;
+                   }
+                  while (  ( (  97  <= zCsY) ||  ( 18323 == D +  GYtk))  && ( 81723 >  zCsY))  {
+                        while  (  qGf  < 1 +  81723)  {
+                               read    QrrKU;
+                              read   yQl;
+                      }
+                      qGf = 1 -  QrrKU  * 1;
+               }
+                  read  QrrKU;
+                     print    TgZd;
+            } else  {
+                  if ( (!( QrrKU <=  81723))  && ( 99857  < 7488))  then {
+                     while ( (!(  TgZd  !=  ZI  -  Bt)) || (  (  81723 !=  97) && ( 97 > D +  zCsY)))  {
+                            Bt =  eLEkt +  81723 + eLEkt;
+                        }
+                  }  else  {
+                      yQl = 81723 - Bn - 28;
+                   }
+            }
+      }
+print  i; }

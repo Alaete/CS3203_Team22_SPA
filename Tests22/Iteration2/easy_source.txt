@@ -1,0 +1,23 @@
+procedure main {
+    L = FQ;									
+    while ( ( L == 7) || ( 3 > 52)) {		
+        print  m;							
+        print  f;							
+        print  yE;							
+    }
+    m = f;									
+    while ( ( 7 <= 52) && ( m > yE)) {		
+        while (!( L > 49)) {				
+            print  L;						
+        }
+    }
+    print  m;								
+    if ( yE > 3) then {						
+        print  yE;							
+    } else {	
+        print  FQ;							
+        m = f + 7;							
+        m = yE;								
+        read  L;							
+    } 
+}

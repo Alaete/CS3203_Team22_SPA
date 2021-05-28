@@ -1,0 +1,596 @@
+procedure audio {
+	print moondrop;
+	read adam;
+	x = 0;
+	y = 2;
+	call while;
+	adam = x + moondrop;
+	while (adam > 100) {
+		adam =  y * 2;
+		call main;
+		if (thie != 1111) then {
+			moondrop = adam;
+		} else {
+			moondrop = y + x;
+		}
+		y = adam + moondrop * thie - x;	
+	}
+	
+	print adam;	
+}
+
+procedure main {
+	call spa;
+	print y;
+	z = 1 + 1;
+}
+
+procedure if {
+	if ((y != 0) && (y < 100)) then {
+		y = y * 2;
+	} else {
+		y = 20;
+	}
+}
+
+procedure while {
+	while ((x <= 100) || (x >= 20)) {
+		x = x + 2;
+	}
+}
+
+procedure spa {
+	read x;
+	y = x + 10;
+	z = y / x * (x % 2) - 20;
+	y = 10;
+	x = 20;
+	var1 = 69;
+	z = 2 * z;	
+	call if;
+	while (var1 < 70) {
+		var1 = var1 + y;
+		var2 = x + var1;
+		z = var2;
+		call while;
+		if (x <= 10) then {
+			var2 = x * 10;
+		} else {
+			var2 = x / 10;
+		}
+		print x;
+	}
+	read z;
+	var1 = y - z % x / var2;
+	print var1;	
+}
+
+
+procedure keyboard {
+
+	if (cherry < 1) then {
+		tangerine = tealios - 39;
+		print hp;
+		while ((kbd <= 108) && (hp != 20)) {
+			x = 26;
+			read kbd;
+		}
+		tealios = tealios - 2;
+		zeal = tealios + 1;
+		call drinks;
+		cherry = x + zeal - hp * 2;
+	} else {
+		while(zeal != 0) {
+			hp = cherry * 20;
+			kbd = 2;
+			zeal = kbd + gat - cherry;
+		}
+		read gat;
+		kailh = 9;
+		x = hp - zeal;
+		print kailh;
+			
+		while(gat > (zeal * 2)) {
+			zeal = kailh + gat;
+			call food;
+			tangerine = gat - hp;
+		}
+		
+	}
+	
+	zeal = kailh * kailh % cherry;
+	read hp;
+	print zeal;
+	zeal = 0;
+	kailh = zeal % 22 - gat + hp;	
+	
+}
+
+procedure food {
+	while (mapo != tofu) {
+		while (mala >= fish) {
+			bread = donut * soup;
+			read steak;
+			sushi = pho - rice;
+			print mee;
+		}
+		dessert = yam / ginko + milk - sugar;
+		sugar = 20;
+		
+		while (pho > 2) {
+			steak = sushi - rice;
+			print fish;
+			read bread;
+			dessert = dessert + 3;
+		}
+		food = bread + steak - pho % fish * dessert;
+		mee = 39;
+		while(pho == 9) {
+			print mala;
+			mala = donut + rice;
+		}
+	}
+	
+	if (dessert - sugar <= pho + steak) then {
+		read mala;
+		rice = 2;
+		if (dessert == sweet * sweet) then {
+			donut = soup - 2 + mapo;
+			yam = ginko;
+		} else {
+			read rice;
+			yam = tofu + rice;
+		}
+		print mapo;
+	} else {
+		while (steak + sushi / (2 * soup) != ginko) {
+			ginko = sushi + soup % 2;
+			milk = 99;
+			fish = food / soup;
+		}
+		tofu = mapo + mala;
+		pho = 0;
+		mala = food;
+	}
+}
+
+procedure drinks {
+	while (sevenUp != 7) {
+		coke = pepsi - fanta / fuji + (apple % grape) * 45 / orange;
+		orange = orange / 4;
+		read apple;
+		print fanta;
+		calpis = fanta - coke;
+		if (kirin == beer + lemon) then {
+			read orange;
+			read wine;
+			call food;
+			shots = sevenUp;
+		} else {
+			print tea;
+			jack = daniels + kirin - (pokka / green) * coke % 50;
+			shots = 40/2;
+			sevenUp = 2 / sevenUp;
+			read pokka;
+		}
+		
+		while (pokka / green == tea) {
+			green = green + 1;
+			wine = pokka + fuji;
+			read tea;
+			pepsi = coke;
+		}
+		
+	}
+}
+
+procedure internet {
+
+	reddit = fb - 3203 % yt;
+	call food;
+	orange = reddit / yt - 420;
+	while(fb > 20) {
+		google = 200;
+		print orange;
+		print fb;
+		if ((hf / orange == reddit) && (discord == 21)) then {
+			tt = reddit - (2 + tw);
+			if (ig < 9) then {
+				read orange;
+				print reddit;
+				if (42 <= tb) then {
+					q10 = yt / tt;
+					ali = tb - q10;
+					while((yt + 10) != (hf - cnn)) {
+						discord = discord / 4;
+						read discord;
+						print discord;
+					}
+				} else {
+					print tt;
+					orange = ali - reddit / 3;
+					if (yh == ali) then {
+						print google;
+						tb = (ali + q10) / (cnn - yh) % 2;
+					} else {
+						q10 = yt - 10 * 2;
+						yt = yh;
+					}
+				}
+			} else {
+				read yt;
+				while (tt == 2) {
+					read google; 
+					call drinks;
+					tb = yt + fb;
+				}
+				yt = 2 + 3 - 9 + cnn;
+								
+				if ((yh == 2) && (4200 > yt + 100)) then {
+					tb = google/ali;
+					fb = 5;
+					print q10;
+				} else {
+					print orange;
+					read yt;
+					q10 = ig / tb + ali;
+				}
+			}
+		} else {
+			while (q10 / 4 * fb - 4 > gm) {
+				orange = ali + 2;
+				ali = ali % 2;
+				ig = 2 + 4 * discord;
+			}
+			ig = 30 - discord + q10;
+			read tb;
+			if (tb > 9000) then {
+				orange = yh;
+				print q10;
+			} else {
+				read orange;
+				fb = orange + 2 / cnn;
+			}
+		}
+	}
+}
+
+
+procedure one {
+	if (x == 40) then {
+		third = second + 23 * 4;
+	} else {
+		second = third * second + 20;
+	}
+}
+
+procedure two {
+	if (first > 10) then {
+		while (fourth > 50) {
+			first = second % 4 - 2 * fourth;
+			call one;
+			fourth =  fourth / 2;
+		}
+		
+		first = first - 1;
+		third = third * first;
+	} else {
+		third = 20;
+	}
+	
+	third = fourth + first - second;
+}
+
+procedure three {
+	first = 1;
+	second = 2;
+	third = 3;
+	
+	while (second < 20) {
+		third = third * 2;
+		if (second >= 35) then {
+			first = second * 3;
+			
+		} else {
+			fourth = third / second;
+			print second;
+		}
+		second = second + first - fourth;
+		fifth =  fifth - 1;
+		call one;
+	}
+	call two;
+	
+}
+
+
+procedure moneyHeist {
+	call office;
+}
+
+procedure bigBang {
+	phone = 0;
+	if (home == 1) then {
+		shareMeal = 20;
+		
+	} else {
+		print leaveMessage;
+		call office;
+	}
+	
+	while (phone > 1) {
+		activity = horseRiding;
+		if (skiing < 1) then {
+			activity = swimming;
+		} else {
+			activity = rockClimbing;
+		}
+	}
+	hotBeverage = cocoa * coffee + (tea - sugar) / 4 * 20;
+	call moneyHeist;
+	partake = 1;
+	
+}
+
+procedure office {
+	read jim;
+	print dwight;
+	read phone;
+}
+
+procedure rezero {
+	read aa;
+	print bb;
+	cc = cc / 40;
+	
+	while (xx - aa <= xx + 2 - yy) {
+		bb = 3203 - cc;
+		dd = dd * dd + 1;
+		zz = 900;
+		while ((200 / var1 > 20) && (yy - xx <= 2334)) {
+			read dd;
+			if (ee + aa - cc * bb == 69) then {
+				print ff;
+				gg = dd * zz - gg;
+				
+				while (ee < 40) {
+					read ee;
+					var1 = 2 * (ee + gg - ii) * 2930940;
+					if (2930940 > ii - jj) then {
+						gg = 1;
+						bb = bb / bb;
+						while (zz == 26) {
+							dd = jj / zz;
+							kk = gg + ff - 22 + 77 / ii;
+							read ee;
+							while ((ii < 20 - 9) && (mm + 0 == 20)) {
+								bb = dd + aa % 2 / kk;
+								print bb;
+								call spa;
+								zz = gg-hh;
+								if (zz < 5) then {
+									xx = cc - 1;
+									zz = bb + dd + bb;
+									while (mm == mm + 20 - 1) {
+										ii = 14;
+										read bb;
+										print var1;
+									}
+								} else {
+									nn = 3;
+									print yy;
+									read zz;
+									var1 = var1 + kk - jj + 2003 / zz % xx * ee;
+								}
+							}
+						}
+					} else {
+						print dd;
+						xx = aa + 1;
+						yy = bb + 2;
+						zz = cc + 3;
+						while (aa == bb) {
+							cc = 99;
+							print zz;
+							kk = bb + cc;
+							mm = dd - 9;
+						}
+					}
+				}
+			} else {
+				print gg;
+				print kk;
+				read mm;
+				ee = 1;
+				if (xx - aa == kk - xx) then {
+					ii = 1 + kk;
+					jj = mm + 2;
+					while (xx == 9) {
+						read aa;
+						read bb;
+						cc = 29;
+						dd = cc + ee / hh;
+					}
+				} else {
+					print yy;
+					ii = 499 * dd;
+					if (ii == 2 + 4 + 5 / 2) then {
+						read zz;
+						gg = ff - 34;
+						read dd;
+						hh = ee - 2 * 4;
+					} else {
+						dd = 3 - 2 + 4 * 9 - 19;
+						while(zz >= aa) {
+							kk = 5;
+							ii = ii + ee - gg + yy * zz;
+						}
+					}
+				}
+				
+			}
+		}
+	}
+}
+
+procedure phoenixFive {
+	
+	while(phoenixForce >= 5) {
+		cyclops = phoenixForce - namor;
+		while (cyclops < 5) {
+			cyclops = cyclops + 1;
+			phoenixForce = phoenixForce + emma;
+			emma = colossus + magik;
+		}
+		
+		if (phoenixForce != 1) then {
+			emma = cyclops + 1;
+			namor = phoenixForce % 2;
+		} else {
+			cyclops = 5;
+		}
+	}
+}
+
+procedure comicArc {
+	cover = cyclops + phoenixForce;
+	
+	if (cover > 20) then {
+		call phoenixFive;
+	} else {
+		cyclops = 1 - cyclops;
+	}
+}
+
+procedure marvel {
+	print phoenixForce;
+	
+	phoenixForce = cyclops + namor + emma + magik + colossus;
+	
+	emma = phoenixForce * 3;
+	
+	read namor;
+	
+	call phoenixFive;
+	
+	if (namor == phoenixForce) then {
+		while (emma < 7) {
+			read hope;
+			emma = hope + 1 - phoenixForce / 5  * cyclops % 3 + namor + 1;
+			call comicArc;
+		}
+		xavier = 20;
+		print xavier;
+	} else {
+		call phoenixFive;
+		xavier = (cylops + phoenixForce) - emma * 2;
+	}
+
+}
+
+procedure steam {
+	
+	hl = 2;
+	
+	while (hl != 1) {
+		tf2 = tf1 * tf1;
+		gabe = 1 * rng + 4;
+		while (((rng < 100) || (bis > 666)) && ((p0rtal != 0) && (cake == 2))) {
+			if ((!(rng != 20)) || (gabe == 2)) then {
+				while (p0rtal == 2) {
+					read newell;
+					newell = p0rtal + ((cake * 2) - 38 / ((33 % bis) - 2) + 50);
+					print cake;
+				}
+			} else {
+				while (cake < 10) {
+					while (gabe != newell) {
+						read hl;
+						rng = hl + tf1 + tf2;
+						print hl;
+					}
+				}
+				
+				call dota;
+			}
+		}
+		
+		if (z == 1) then {
+			tf1 = tf2 - 1;
+			while (tf1 != tf2) {
+				z = z / 2;
+				p0rtal = ((z) - 1) + ((((rng))));
+			}
+			
+			while (gabe == newell) {
+				cake = rng;
+				bis = ((((hl + tf1 + tf2 - cake))));
+			}
+			
+			read bis;
+			
+			while (bis == rng) {
+				bis = bis * 666;
+				print cake;
+			}
+		} else {
+			read cake;
+		}
+		
+		if (tf1 < tf2) then {
+			print hl;
+		} else {
+			read gabe;
+		}
+	}
+	
+	
+}
+
+procedure dota {
+	
+	bs = 1;
+	slark = 20;
+	
+	if (pudge == 0) then {
+		while (cm <= (lion - 1)) {
+			print drow;
+			bane = (lion + cm) / slark;
+			axe = axe * 1;
+			
+		}
+		
+		while (jug == 30) {
+				jug = pudge - bs;
+				read jug;
+				axe = cm + jug + ta;
+				
+				while (axe >= (ta + 2 * (3-2))) {
+					ta = ta * ta - ta / ta + ta % ta;
+				}
+				
+				drow = ta - 2 * 5 % 1;
+				
+		}
+		
+		slark = slark / 35;
+		
+	} else {
+	
+		while((pudge == axe)||(jug != ta)) {
+			
+			while (lion < 6) {
+			
+				print lion;
+				
+				while (!(slark != 16)) {
+					read slark;
+				}
+				
+			}
+			
+		}
+	}
+	
+	print bane;
+}

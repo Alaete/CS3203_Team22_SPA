@@ -1,0 +1,440 @@
+procedure n {
+    if ( ( ( ( 16 != 1 - u - 98 * D) && ( 74 > RV)) && ( ( u <= 87) || ( 87 / 6 == RV))) || (!( ( hN < 6) && ( u > 87 + D * u)))) then {
+        while ( ( (!( 87 >= u + 16 * D)) && (!( 45 < u))) && (!( ( hN != 98 + 2 * hN) || ( 4 >= RV + 74 % 74)))) {
+            while ( ( (!( RV <= 4)) && ( 87 > 7)) && ( ( D < 24 + hN) || ( ( 69 + 2 == 66 + 66 * 87) || ( Rd <= 7)))) {
+                hN = D + 98 - Rd / 45 - 8;
+            }
+            if ( ( (!( 6 + 16 / 86 != 45)) || ( 98 <= 98 + 2 + D * u)) && ( 7 != 5 - u - Rd % 8)) then {
+                print  hN;
+                read  Rd;
+                Rd = 87 + u - Rd * 8 - 8 %  ( Rd);
+            } else {
+                if ( 8 + Rd + RV / u > 1) then {
+                    if (!( 74 - 2 == 8)) then {
+                        if ( ( (!( Rd % 69 > 16)) || ( ( hN != hN - D + RV) && ( 1 >= RV * 2))) || ( ( hN != 69) || (!( 1 + hN - 8 < 16)))) then {
+                            if (!(!( ( 4 >= 2) || ( D - 74 + RV % 2 >= 86)))) then {
+                                if ( ( (!( hN > D)) || ( RV > 16)) && ( ( RV == D - 98 * Rd) && ( ( 2 % RV != 35) && ( D == hN - 2 % 69)))) then {
+                                    Rd =  ( hN);
+                                } else {
+                                    while ( ( ( ( hN + RV + 69 % hN >= 98) || ( D < u)) || (!( 6 != 45))) || ( D >= RV + D + u * D)) {
+                                        read  Rd;
+                                    }
+                                }
+                            } else {
+                                if ( ( ( hN >= u) || ( ( 7 > 87) && ( u == RV))) && ( 86 >= Rd + 35)) then {
+                                    hN = D % Rd /  ( u);
+                                } else {
+                                    read D;
+                                }
+                            }
+                        } else {
+                            while ( ( ( ( u <= 74) || ( 4 + RV + Rd > Rd)) && (!( 8 >= Rd))) || ( ( ( 87 - RV - hN * RV >= 86) || ( Rd <= 5)) && ( 8 < 5))) {
+                                while (!( 87 >= 1 / RV)) {
+                                    RV = 2 * D;
+                                }
+                            }
+                            D = RV;
+                        }
+                        print  RV;
+                    } else {
+                        read  u;
+                        Rd = D;
+                    }
+                    D = Rd / 35 - 5 * 35 % u;
+                    while ( hN == 2 + 87 - 86 / 6) {
+                        read  RV;
+                    }
+                    RV = u + 16 % u * 6;
+                } else {
+                    while (!(!( ( RV < RV - u) && ( u < 7 % 4)))) {
+                        if ( ( ( ( 69 / 66 != hN) && ( 24 - Rd + hN % D < 69)) && (!( Rd <= u))) || ( hN > Rd)) then {
+                            Rd = D -  ( 24);
+                        } else {
+                            print  RV;
+                        }
+                        read  RV;
+                    }
+                }
+            }
+        }
+    } else {
+        RV = 35 - D / D;
+    }
+}
+
+procedure R {
+    if ( ( (!( 86 + D + Rd * 6 < RV / hN)) || ( ( D - 66 - 1 * 6 > D) && ( u * 24 <= 87))) || ( ( ( hN < RV) || ( 2 < RV)) && ( D % 16 <= Rd))) then {
+        if ( ( 24 != Rd) && ( ( ( 66 >= RV) || ( Rd >= D % u)) || (!( u >= 2)))) then {
+            print  hN;
+            while ( ( 69 + 8 - u / D >= hN) || ( 4 > 1 + 6 - D)) {
+                hN = u * RV;
+            }
+            print  Rd;
+            while ( hN - 1 + RV < 6 - 45 + RV % 45) {
+                Rd = 69 *  ( u);
+                if ( ( u + 16 / 2 == 5) || ( Rd + u - 1 / D != 2)) then {
+                    while ( ( ( u != 74) && (!( 98 >= 86))) || (!( ( 98 != 6 % Rd) || ( 5 < RV)))) {
+                        while ( ( ( ( 5 == RV) && ( 2 == 98)) && ( ( Rd != 7 - RV + 24 * u) && ( 8 > hN))) || (!( 69 + D + 45 % D != 16))) {
+                            u = 4 + hN + 74 * 5 * hN;
+                        }
+                        print  D;
+                    }
+                    if (!( ( ( 16 - Rd + hN % 6 > 87) || ( D == 87)) || ( ( 35 >= Rd) && ( 69 <= 8 + Rd * Rd)))) then {
+                        hN = D % RV - 16 % RV % 8;
+                    } else {
+                        if ( RV / 8 <= 2) then {
+                            print  Rd;
+                            print  u;
+                        } else {
+                            while ( ( 16 != 7 % 35) || ( ( RV == 16 - D + D) || ( ( hN < 66) || ( D <= Rd + RV % 7)))) {
+                                while ( ( ( 24 <= hN) || ( ( D <= u) || ( hN < hN))) && ( 16 == D)) {
+                                    if ( ( 8 <= 8) && ( (!( 8 < 74)) || (!( D >= 5 - 74 + 86 % 8)))) then {
+                                        Rd = Rd + 4 / Rd - 24 / 69 * hN;
+                                    } else {
+                                        while ( 74 >= 98) {
+                                            while ( ( ( 24 != RV) || ( 69 != u)) && (!( ( hN / RV == Rd) || ( 66 <= Rd + 2 - D / 86)))) {
+                                                call  KZ;
+                                            }
+                                        }
+                                    }
+                                    u = 87 - 66 / hN - 2 / hN / hN;
+                                }
+                                u = 1 + D;
+                            }
+                            RV = Rd + D + Rd * 16 + u /  ( 24);
+                        }
+                        while (!(!( D <= 6))) {
+                            hN = Rd - Rd - 2 + 69 / 87 % u;
+                        }
+                    }
+                    read  D;
+                } else {
+                    Rd = Rd * 2 / 98;
+                    if ( 2 + Rd - 16 * 35 >= 16 / D) then {
+                        print  D;
+                        D = 1 + Rd - RV / 4 / hN;
+                    } else {
+                        while ( (!( ( 69 + RV - 1 <= 24) || ( D < 69 - D + RV % 2))) && ( ( ( 2 <= D) || ( 74 >= 35)) || ( 4 > 24))) {
+                            Rd = 2 / hN % 2;
+                        }
+                    }
+                }
+            }
+        } else {
+            print  Rd;
+        }
+    } else {
+        call  qf;
+    }
+}
+
+procedure Bw {
+    RV = Rd * D;
+    Rd = 4 - 4 % Rd - 2 * 16 * 16;
+    read  hN;
+    read  RV;
+    hN = 66 % Rd * 16;
+    if ( ( 87 <= 8 % hN) || ( u <= 16 - 2 - 98 % hN)) then {
+        if ( D != 35) then {
+            D = hN;
+        } else {
+            hN = RV + Rd - 16 * D + 45 / 1 /  ( 87);
+        }
+        while (!( ( ( 2 != 87) && ( hN == 86 - 87 + Rd % 1)) && ( ( 16 < Rd) || ( hN <= 35)))) {
+            read  D;
+            while (!( ( ( RV > D) && ( u != 16)) && ( 66 > 69 - 2 + Rd * hN))) {
+                print  hN;
+                call  fm;
+            }
+            while ( RV != D) {
+                call  qf;
+            }
+        }
+        while ( RV <= hN + u - D % u) {
+            print  RV;
+        }
+        read  Rd;
+    } else {
+        while ( (!( u != RV)) && ( (!( 8 - 16 + 87 / Rd > RV)) && (!( Rd + u - hN / hN == 2 + 24 - RV % 16)))) {
+            print  u;
+            read  RV;
+            read  D;
+            print  D;
+        }
+        while ( ( ( ( 74 * 6 <= Rd % 35) && ( Rd * Rd >= 74 % 45)) && (!( 98 - 16 % 6 > RV))) && ( ( ( Rd <= 2) || ( u > 5 - 86 - 98)) && ( ( 35 + RV * 1 >= 69 * 74) || ( 16 != D)))) {
+            read  u;
+            RV = 5 - u % RV + 1 % D;
+        }
+        read  hN;
+        read  hN;
+        u = D - 24 - Rd * 24 +  ( 87);
+    }
+}
+
+procedure fm {
+    if ( (!( 35 >= 2)) && (!(!( 86 <= 45)))) then {
+        if ( (!( ( 16 >= 4 / 24) || ( 4 + 2 + D / hN < D))) || ( (!( RV == D)) && (!( u != 16 * RV)))) then {
+            read  Rd;
+            Rd = D + 6 / hN - Rd;
+            while ( 16 > D / hN) {
+                D = hN - 87 - hN * Rd + D;
+            }
+        } else {
+            while (!( ( ( Rd >= 69) || ( D > Rd)) || (!( Rd == RV - 86 - hN * hN)))) {
+                read  hN;
+                if ( 24 == hN - 1 - 8 % 87) then {
+                    RV = 16 / 45 %  ( 87);
+                    print  D;
+                    while ( ( ( ( Rd != u / 35) && ( D == 74 - RV)) || ( 2 < 98)) || (!( ( 45 >= RV) || ( RV / RV == 45)))) {
+                        hN = 66 - 66 / 1 -  ( 35);
+                        print  u;
+                    }
+                    print  Rd;
+                } else {
+                    if ( ( (!( u != 2)) || ( ( 2 < hN) && ( 24 >= D))) && ( (!( RV / 87 <= 16)) || (!( D - 74 - 16 % RV >= 98)))) then {
+                        Rd = u - 35 - u / D + u % RV * 8;
+                    } else {
+                        if ( ( ( RV <= RV - 45 + 2 / 2) && ( Rd > 2)) && (!( ( hN <= 2) || ( RV == 16)))) then {
+                            if ( ( ( 5 > RV) && ( ( 24 > 69) && ( hN < 8 / RV))) || ( (!( RV != RV + 8 % D)) && ( ( Rd * 8 > 4) || ( D > 7 + 2 + RV)))) then {
+                                while ( ( (!( 8 % Rd < 66)) || ( ( u + 4 % 4 > 87 * 16) && ( RV == 86 + hN - 6 * hN))) || ( ( ( D >= hN) || ( 87 >= 24 - u - u)) || ( ( 5 <= 2) || ( 35 < D)))) {
+                                    if (!( (!( 45 * RV < 8)) && ( ( 16 * 98 > u) || ( 8 <= Rd + D + 86 % 87)))) then {
+                                        read  Rd;
+                                    } else {
+                                        print  RV;
+                                    }
+                                }
+                                RV = hN * RV % 45;
+                            } else {
+                                while (!( 16 - RV + 35 % 6 < Rd)) {
+                                    while (!(!( 4 > 5 + 4))) {
+                                        if (!( ( ( 5 < 2) && ( hN <= D)) && (!( 2 == 6)))) then {
+                                            RV = hN * 4 % 45;
+                                        } else {
+                                            RV = 69 - D + Rd / Rd + 87 % 86 *  ( u);
+                                        }
+                                    }
+                                }
+                            }
+                            read  u;
+                        } else {
+                            while ( ( ( ( 8 != 2 + 45 + hN % 8) || ( RV >= u)) && ( ( 16 + 35 + D > 6) || ( 86 > RV))) || ( D >= Rd % 5)) {
+                                RV = 16 % 8 +  ( 35);
+                            }
+                            Rd = Rd * hN *  ( Rd);
+                            if ( ( ( ( Rd < 16) || ( Rd >= hN)) || ( ( hN >= 45 / u) && ( 69 >= 6))) || ( ( ( 8 + 98 - 87 / hN < D) && ( 7 + 1 * u > 5 + 2 - 5 / hN)) || ( 35 - D + 4 <= Rd))) then {
+                                if ( ( 69 == u) && ( Rd + 1 % u > 1)) then {
+                                    print  hN;
+                                } else {
+                                    if ( ( ( 66 < hN) || ( ( 86 - 16 % u == u) && ( Rd + D + 2 % 7 == Rd))) || (!( ( u < D) && ( RV >= 7)))) then {
+                                        print  Rd;
+                                    } else {
+                                        read  hN;
+                                    }
+                                }
+                            } else {
+                                while (!( ( ( 4 > RV) && ( Rd % Rd >= 2 + Rd)) || ( ( 16 < u - Rd * 7) || ( hN >= D)))) {
+                                    hN = u - hN - Rd;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    } else {
+        if ( RV + 87 - 86 % 4 > 74) then {
+            while ( 4 != 45) {
+                hN = hN + 1;
+            }
+        } else {
+            RV = 69 - D + Rd / Rd;
+        }
+    }
+}
+
+procedure KZ {
+    while (!( 8 >= u)) {
+        if ( (!(!( 74 > u))) || ( ( ( Rd <= hN) && ( 6 < Rd)) || ( ( u > u) && ( 66 != 7)))) then {
+            read  D;
+            call  Bw;
+        } else {
+            while (!(!(!( hN - 5 - 8 * u >= 45 * 7)))) {
+                read  u;
+                call  fm;
+            }
+            hN = hN - RV / D *  ( 35);
+        }
+        while ( D - 2 % 16 < 45 - RV + 6) {
+            call  fm;
+        }
+        if ( ( 8 <= RV) || (!( ( 87 / 87 != u) || ( 5 == 45)))) then {
+            while (!( RV + 8 - 24 % 7 == Rd)) {
+                u = Rd / 35 * Rd;
+            }
+        } else {
+            Rd = u;
+        }
+        D = 87 + 35 + 7 % 98 + Rd * 5 % 69;
+    }
+    while ( (!( RV >= D * D)) || ( 16 <= 8)) {
+        if ( ( ( ( 98 + 35 + hN * 1 >= 5) && ( 4 > u)) && (!( D != 66))) || ( ( 6 - hN + 69 * Rd <= 69) || (!( 6 != 69)))) then {
+            while (!( ( 4 <= 8) || ( 2 >= hN))) {
+                if ( (!(!( RV <= 2 * 69))) || ( (!( u != Rd + RV + 98 % D)) && ( hN * 8 < 4))) then {
+                    read  D;
+                    call  n;
+                } else {
+                    if ( ( (!( D > 16 - 69 + Rd)) && ( 87 > 98 / Rd)) && ( ( ( 6 == 86 - D % hN) && ( hN < 7 + 87 + 45 % 5)) || ( 24 / 24 <= hN))) then {
+                        if ( hN - u - 86 % 98 == 4) then {
+                            call  qf;
+                        } else {
+                            while ( Rd <= D) {
+                                read  u;
+                            }
+                            if (!( ( Rd != 16) || ( ( RV - 2 / 8 < 7) && ( hN >= 7)))) then {
+                                if ( (!( ( 1 * 16 != 66) && ( u == 8 % 86))) && ( hN - RV + hN / 8 == D)) then {
+                                    u = 98 * 45;
+                                } else {
+                                    print  Rd;
+                                }
+                            } else {
+                                hN = RV - 4 / 45 - 6 % Rd;
+                            }
+                        }
+                        if ( (!( ( Rd <= 7 - u + 8 / D) && ( hN <= 24))) && ( 7 / 8 == RV + hN - 98 % RV)) then {
+                            while ( (!(!( u - 16 - RV / 87 <= Rd + D - 7 * hN))) || ( ( ( D != hN) || ( hN - D + RV * 4 == 2)) || ( 35 != 87 - D * 6))) {
+                                print  RV;
+                                hN = 6 / Rd % Rd;
+                            }
+                            while ( ( (!( 6 != 86 + 69 - 45)) || ( RV > Rd + 74 * 16)) && (!( ( 87 != u) || ( u < 5 + 45 % hN)))) {
+                                if ( (!( ( RV + 98 / hN > RV) && ( RV + 4 - D / 98 < RV))) || ( (!( 2 <= 8)) || (!( Rd % u < u - D + hN * u)))) then {
+                                    Rd = 16 + 98 / RV - Rd / D % Rd;
+                                } else {
+                                    u = RV - RV - D / hN - 8 / 86 * D;
+                                }
+                            }
+                        } else {
+                            while (!( ( 7 < u) || ( ( 2 + 2 - 66 > u / Rd) || ( 45 > 74)))) {
+                                Rd = Rd + u + u - D %  ( hN);
+                            }
+                        }
+                    } else {
+                        hN = 4 - 5 - 1 / u + hN % u /  ( u);
+                    }
+                }
+            }
+        } else {
+            u = hN % 7 % RV;
+        }
+    }
+}
+
+procedure hE {
+    read  Rd;
+    while ( u <= D) {
+        while ( ( ( ( Rd - 16 - D % D >= 4 - RV + u / u) || ( hN <= D - Rd)) && ( ( 16 <= 8) || ( u < 87))) && (!(!( 16 - 8 + 45 % 6 <= 87)))) {
+            Rd = 86 - Rd - 87 % 66 + RV;
+            RV = D - 87;
+        }
+        print  RV;
+    }
+    while ( ( D > 5) && ( ( 87 + hN - 16 % 16 != hN) && ( ( 1 >= u) && ( D == 16)))) {
+        while ( ( ( u == 8) && ( 87 > RV + 86 - 98 * D)) || (!( ( 8 % 8 != RV) || ( hN - 6 - D / Rd != hN)))) {
+            D = 8 - u - 16 + 74 * 98 %  ( RV);
+            read  hN;
+            while ( 7 < 8) {
+                D = 16 % 6 - Rd / Rd;
+                if ( (!( ( RV < RV) || ( 66 <= 98))) && ( ( ( 5 == 8) || ( hN < 7)) || ( ( RV == 45) || ( 2 <= 5)))) then {
+                    read  Rd;
+                    if ( ( ( 2 <= 5) && ( ( 98 < Rd) || ( hN % 66 > RV + 1 + 6))) || (!( ( 8 >= D) && ( u - D - hN % 35 >= D)))) then {
+                        call  n;
+                    } else {
+                        RV = 2 - 98 % u * 8;
+                    }
+                } else {
+                    RV = D - 74 - 6 % 24 - RV;
+                }
+                hN = 16 * 4 % 66;
+            }
+            print  u;
+            print  u;
+            if ( (!( ( 66 > 16) || ( 66 + 1 + 6 % 16 <= 24))) || ( ( ( D <= 87) || ( Rd > 7)) || ( 4 - hN % 45 > hN - Rd + hN / RV))) then {
+                while ( ( 16 <= 74) || ( 8 <= RV)) {
+                    Rd = hN / 1 - Rd;
+                }
+                RV = 8 / u /  ( D);
+            } else {
+                while ( 24 != 69 * 1) {
+                    Rd = 74 + hN + 35 - Rd * Rd %  ( RV);
+                    Rd = 66 - RV;
+                }
+                if ( ( hN != 74) && ( 86 + RV * 7 != 8)) then {
+                    D = 8;
+                } else {
+                    print  hN;
+                }
+            }
+            if ( ( RV != D) || ( ( ( 6 + 16 > hN + u - Rd / 74) || ( u - Rd + u != 98)) && ( 66 <= Rd + 98 - D))) then {
+                call  n;
+            } else {
+                Rd = 69 / 7;
+            }
+        }
+    }
+}
+
+procedure qf {
+    if ( ( Rd < RV) || ( 35 == u)) then {
+        print  u;
+        read  D;
+        Rd = u + 16 - u / 86 - D / Rd / 98;
+        while ( 69 < RV) {
+            while ( ( ( ( RV <= D) || ( hN == 2)) || ( ( D != RV) || ( 35 < 2))) || ( (!( Rd >= 45)) || ( ( D > 16) || ( Rd >= RV + 35 - 35 * 24)))) {
+                if ( 24 < u + u / 5) then {
+                    RV = RV / 69 % hN;
+                    read  RV;
+                    u = 5 + 74 - 16 % hN + u / RV * 2;
+                } else {
+                    RV = Rd + u - u % RV;
+                    while ( ( ( RV > 98) && (!( hN - 1 - u / 6 > Rd - hN - Rd / 35))) || ( ( ( 8 + RV - 24 * D >= RV) && ( 8 * u == 4 - u - 7)) || ( ( RV != 24) || ( 5 - Rd <= 66)))) {
+                        Rd = hN - RV % 8;
+                    }
+                    while ( 2 == u) {
+                        read  RV;
+                        hN = 8 / 6 + 74;
+                    }
+                    hN = 2 / D % 98;
+                    while ( ( ( ( D < 24) && ( 6 == 4)) && ( ( RV == u) && ( 16 == 98 - 2 - u % Rd))) || ( ( ( 5 % hN <= u) || ( Rd < hN * D)) && (!( Rd < 35)))) {
+                        read  u;
+                    }
+                }
+                if (!( ( ( 74 > Rd) && ( D < 35 - u + 86 / u)) && ( 2 >= 7 + 69))) then {
+                    while ( ( ( ( 1 < 1 % hN) || ( hN - 24 - D * 8 != RV)) || (!( D != 6))) || ( ( ( hN < Rd + 98 - 35 / hN) && ( 86 + hN + 16 * Rd <= 5 - 8 % 87)) || ( ( 4 == 45) && ( D >= RV - 6 % 2)))) {
+                        print  u;
+                        if ( ( ( ( 16 > 86) || ( u != hN + RV * D)) && ( ( RV - RV / 8 >= 7 - 66 % 74) && ( 16 != 2 - 16 * RV))) && ( 2 + D + u / D != 69 % 69)) then {
+                            u = 16 - u / Rd * Rd;
+                        } else {
+                            hN = 2 - 66 + 2 % 35 - Rd * 6 % 45;
+                        }
+                        D = 66 / 7 + 45 / hN * 66;
+                    }
+                    while ( (!( ( 2 != 98) && ( RV + u - 5 < 69))) && ( hN <= hN)) {
+                        if (!(!( ( 45 + 35 > hN - 87 + RV % 86) && ( 24 + 6 + 8 % u <= 45)))) then {
+                            RV = D + u - hN + 35;
+                            print  hN;
+                        } else {
+                            read  u;
+                            D = D / hN - 1 % 24 % u;
+                        }
+                        print  Rd;
+                    }
+                    print  u;
+                } else {
+                    D = Rd;
+                }
+            }
+        }
+    } else {
+        D = 69 * 74;
+    }
+}
+

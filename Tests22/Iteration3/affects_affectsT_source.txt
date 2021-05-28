@@ -1,0 +1,53 @@
+procedure one {
+	read apple;										
+	starfruit = orange * 5 - 7;						
+	pear = starfruit  + 0 - 3 * pineapple; 			
+	
+	orange = pineapple * 3;							
+	call three;										
+	pineapple = orange - 5 + starfruit;				
+	
+}
+
+procedure two {
+	burger = speaker + 3;							
+	
+	while (bread < 10) {							
+		sandwich = sandwich * 10;					
+		bread = 10 * 4 + (burger / 10);				
+		if (sushi != 20) then {						
+			print sushi;							
+			read sandwich;							
+		} else {
+			burger = 5 + (2 - bread);				
+		}
+	}
+	
+	read speaker;									
+}
+
+procedure three {
+	read dac;										
+	speaker = dac * 8 + 3;							
+	call two;										
+	amp = speaker + 4;								
+	print amp; 										
+}
+
+procedure four {
+	reddit = 1;										
+	facebook = reddit * 3 + discord;				
+	print snapchat;									
+	
+	if (instagram < 30) then {						
+		read facebook;								
+		discord = facebook * 9;						
+	} else {
+		print facebook;								
+		snapchat = 2 * reddit;						
+		facebook = 0;								
+		instagram = facebook + snapchat;			
+	}
+	
+	instagram = snapchat % 6 + 2 * 80 + 69;			
+}

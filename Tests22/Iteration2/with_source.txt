@@ -1,0 +1,68 @@
+procedure main {
+    WN = 69 + WN;										
+    while ( ( P < 6) || ( MM != 8)) {					
+        print  MM;										
+    }
+    print  Py;											
+    print  V;											
+    read  WN;											
+    if ( 69 >= WN) then {								
+        WN = WN;										
+        read  MM;										
+        print  V;										
+    } else {
+        print  WN;										
+    }
+    while ( WN > WN) {									
+        read  MM;										
+        print  P;										
+    }
+    if ( ( 8 >= WN) || ( WN == WN)) then {				
+        print  P;										
+    } else {
+        read  Py;										
+    }
+}
+
+procedure first {
+    if ( ( 2 > JC) || ( S >= 8)) then {					
+        JC = 2 + 1;										
+        print  Oh;										
+        read  JC;										
+        Oh = S - S;										
+        read  Z;										
+    } else {
+        JC = 6 - Oh;									
+    }
+    if ( ( 2 < X) || ( 1 != 1)) then {					
+        X = 2 - 1;										
+        print  JC;										
+        read  Oh;										
+        Oh = 6 + S;										
+        Z = Oh + 8;										
+        X = Z;											
+        print  JC;										
+    } else {
+        read  S;										
+    }
+	call second;										
+}
+
+procedure second {
+    while ( iz != 5) {																	
+        if (!( ( 72 <= 5 + 39) || ( 9 == X))) then {									
+            while ( r + d == r) {														
+                if ( ( ( 39 >= r) && ( V - 69 > p)) && ( 5 - 5 <= f + iz)) then {     	
+                    p = d + Rr + 5 * AD;												
+                } else {
+                    print  X;															
+                }
+            }
+        } else {
+            while (!( ( 69 >= V - 52) && ( 5 == Rr))) {									
+                print  r;																
+            }
+        }
+    }
+	print x;																			
+}

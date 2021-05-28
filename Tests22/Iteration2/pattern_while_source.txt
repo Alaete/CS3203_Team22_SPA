@@ -1,0 +1,67 @@
+procedure main {
+    print  RY;																						
+    while ( 23 - 6 == K - WD) {																		
+        if ( K + WD == 7) then {																	
+            while ( (!( 32 < 7)) || (!( G < u))) {													
+                print  G;																			
+            }
+            while ( (!( DZ > I)) && (!( 6 + WD == I))) {											
+                while ( (!( G > RY)) && ( I - DZ < G)) {											
+                    if ( ( ( K >= 6) || ( 32 > 57)) || ( 32 <= L)) then {							
+                        K = 7 / 6;																	
+                    } else {
+                        if ( 95 > 38) then {														
+                            L = 23 - rF - 57;														
+                        } else {
+                            I = 23 + G + p;															
+                        }
+                    }
+                }
+            }
+        } else {
+            if ( ( ( K > u) && ( I != p)) || ( ( 32 != 82) || ( Rj == 38))) then {					
+                while ( ( 32 - F <= F) && (!( K + 82 != p + G))) {									
+                    while ( 11 != 32) {																
+                        G = 6 - 32 + G * G;															
+                    }
+                }
+            } else {
+                Rj = WD * 57;																		
+            }
+        }
+        print  R;																					
+    }
+    if ( G == u + 23) then {																		
+        while ( ( ( Rj + 11 != 82) && ( 11 - u == 95 + I)) || ( ( u <= rF) || ( 38 + F > I))) {		
+            print  I;																				
+            if (!(!( L > I + 32))) then {															
+                print  RY;																			
+                KX = p + I / G;																		
+                if ( (!( R >= 82)) || ( ( 57 > I) || ( 11 > u - 82))) then {						
+                    WD = R + p - 32;																
+                } else {
+                    if ( (!( 7 <= RY)) || ( ( 7 + I == R - u) && ( DZ < KX))) then {				
+                        print  Rj;																	
+                    } else {
+                        while ( I <= 32) {															
+                            L = L + p - 38 * I;														
+                        }
+                    }
+                }
+            } else {
+                if (!( ( F != 32) && ( WD < 7))) then {												
+                    I = 23 + u - K * 32;															
+                    WD = 38 + I - RY * 6;															
+                    R = 82 * 23;																	
+                } else {
+                    WD = 7 / L;																		
+                }
+            }
+        }
+    } else {
+        while ( ( ( 11 != 38) && ( K - K != 23)) || ( ( L >= K) || ( 82 >= K))) {					
+            read  K;																				
+        }
+    }
+	print i; 																						
+}

@@ -1,0 +1,45 @@
+procedure elaine {
+    burrito = 0;           													
+	cheese = 2;																
+	veg = 0;																
+	pizza = var1 * 10 * cheese + (var2 / 2 + 6); 							
+    call starcey;															
+	
+	while (var1 > 0) { 														
+	    burrito = burrito % 3;												
+		fries = fries / 5;													
+		if (burrito == 0) then {											
+		    read pizza;														
+			burrito = pizza * cheese; 										
+			
+		} else {
+			var1 = 20;														
+			call grace;														
+			burrito = 5 + (var2 /2);										
+		}
+		
+		pizza = pizza + 3;													
+	}
+	
+	if (onion == 0) then {													
+	    call grace;															
+		burrito = pizza * veg;												
+	} else {
+		call starcey;														
+	}
+	answer = cheese + pizza + 6;											
+} 
+
+procedure starcey {															
+	read receipt;															
+	print var1;																
+}
+
+procedure grace {
+	burrito = 10;															
+	currentCoins = 1;														
+	while (coins != 30) {													
+		coins = currentCoins + 10;											
+	}
+	print coins;															
+}

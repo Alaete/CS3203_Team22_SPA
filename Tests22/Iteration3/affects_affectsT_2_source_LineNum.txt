@@ -1,0 +1,85 @@
+variables: a, b, c, d, e, f, g, h
+constants: 1, 2, 3, 4, 5, 10, 20, 69, 100 
+
+procedure one {
+	read a;						//1
+	read b;						//2
+	read c;						//3
+	read d;						//4
+	read e;						//5
+	read f;						//6
+	read g;						//7
+}
+
+procedure two {
+	a = 1;						//8
+	b = a;						//9
+	c = b * 3 + 2 * a;			//10
+	d = c / 2 * 4 + a;			//11
+	e = g/c;					//12
+	a = c * 3;					//13
+	f = f/f;					//14
+	g = a * b + c - d / e * f;	//15
+	h = 20 * 5;					//16
+	
+	if (e == f) then {			//17
+		print e;				//18
+		f = e;					//19
+		call one;				//20
+		print e;				//21
+	} else {
+		c = b;					//22
+		print b;				//23
+		read b;					//24
+		b = b + c + e;			//25
+		print e;				//26
+		print b;				//27
+	}
+	
+	while (c <= c) {			//28
+		d = d + e;				//29
+		g = g + a;				//30
+		
+		while (g >= b) {		//31
+			a = b;				//32
+			b = d;				//33
+			while (a >= 20) {	//34
+				e = h;			//35
+				b = c;			//36
+				call one;		//37
+			}
+			g = a + b + c + e;	//38
+		}
+		
+	}
+	a = d + e / f * g - h;		//39
+	if (a < 2) then {			//40
+		call three;				//41
+	} else {
+		b = g;					//42
+		while (e > 100) {		//43
+			if (g < 10) then {	//44
+				while (h < 69) {	//45
+					print g;	//46
+					print b;	//47
+				}
+				read b;			//48
+			} else {
+				print b;		//49
+			}
+		}
+	}
+	
+	c = a + b - c / d % e - f * g + h;	//50
+	h = h;						//51
+}
+
+procedure three {
+	a = a;						//52
+	b = b;						//53
+	c = c;						//54
+	d = d;						//55
+	e = e;						//56
+	f = f;						//57
+	g = g;						//58
+}

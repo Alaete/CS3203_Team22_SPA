@@ -1,0 +1,231 @@
+1 - NextBip common synonym 
+stmt s;
+Select s such that NextBip(s, s)
+none
+5000
+2 - NextBip
+stmt s; prog_line n1;
+Select n1 such that NextBip(49, n1)
+1
+5000
+3 - NextBip
+prog_line n;
+Select n such that NextBip(70, n)
+42
+5000
+4 - NextBip
+prog_line n;
+Select n such that NextBip(74, n)
+1
+5000
+5 - NextBip
+prog_line n;
+Select n such that NextBip(61, n)
+63
+5000
+6 - NextBip
+prog_line n;
+Select n such that NextBip(64, n)
+65
+5000
+7 - NextBip
+prog_line n;
+Select n such that NextBip(65, n)
+34
+5000
+8 - NextBip
+prog_line n;
+Select n such that NextBip(33, n)
+76,56,35,66
+5000
+9 - NextBip
+stmt s;
+Select s such that NextBip(46, s)
+69
+5000
+10 - NextBip
+stmt s1;
+Select s1 such that NextBip(55, s1)
+34
+5000
+11 - NextBip
+stmt s;
+Select s such that NextBip(s, 66)
+33
+5000
+12 - NextBip
+if ifs1;
+Select ifs1 such that NextBip(ifs1, 39)
+38
+5000
+13 - NextBip
+stmt s; stmt s1;
+Select s such that NextBip(s, s1)
+1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,69,70,71,72,73,74,75,76,77,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94
+5000
+14 - NextBip
+stmt s; stmt s1;
+Select s1 such that NextBip(s, s1)
+1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,63,64,65,66,67,68,69,70,72,73,74,75,76,77,78,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95
+5000
+15 - NextBip
+stmt s1;
+Select s1 such that NextBip(s1, 35)
+34,33,48
+5000
+16 - NextBip
+prog_line n;
+Select n such that NextBip(n, 42)
+41,70
+5000
+17 - NextBip
+prog_line n;
+Select n such that NextBip(n, 51)
+50,54
+5000
+18 - NextBip
+assign a;
+Select a such that NextBip(a, 45)
+44
+5000
+19 - NextBip
+procedure p;
+Select p such that NextBip(1, 2)
+olaf,belle,simba,jasmine,elsa,aurora,anna
+5000
+20 - NextBip
+procedure p;
+Select p such that NextBip(38, 49)
+none
+5000
+21 - NextBip
+while w;
+Select w such that NextBip(w, 49)
+35
+5000
+22 - NextBip
+prog_line n;
+Select n such that NextBip(n, 63)
+61,59,58,67
+5000
+23 - NextBip Boolean
+
+Select BOOLEAN such that NextBip(39, 1)
+TRUE
+5000
+24 - NextBip Boolean
+
+Select BOOLEAN such that NextBip(49, 1)
+TRUE
+5000
+25 - NextBip Boolean
+
+Select BOOLEAN such that NextBip(_,_)
+TRUE
+5000
+26 - NextBip tuple
+assign a; call c;
+Select <a, c> such that NextBip(a, c)
+45 46 
+5000
+
+27 - NextBip Tuple 1 common
+assign a; call c; stmt s;
+Select <s, c, a> such that NextBip(c, a) and NextBip(s,c)
+35 49 1, 38 39 1, 71 75 1
+5000
+28 - NextBip 
+call c; assign a; stmt s;
+Select <s, a, c> such that NextBip(61, s) and NextBip(s,a) and NextBip (a,c)
+answer
+5000
+29 - NextBip*
+stmt s;
+Select s such that NextBip*(s, 34)
+55,51,52,53,54,50,62
+5000
+30 - NextBip*
+prog_line n; procedure p;
+Select p such that NextBip*(n, n)
+1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,69,70,71,72,73,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95
+5000
+31 - NextBip*
+
+Select BOOLEAN such that NextBip*(_, _)
+TRUE
+5000
+32 - NextBip* Boolean
+
+Select BOOLEAN such that NextBip*(_, 4)
+TRUE
+5000
+33 - NextBip* Boolean
+
+Select BOOLEAN such that NextBip*(4, _)
+TRUE
+5000
+34 - NextBip* Boolean
+
+Select BOOLEAN such that NextBip*(49, 40)
+FALSE
+5000
+35 - NextBip* boolean
+
+Select BOOLEAN such that NextBip*(67, 70)
+FALSE
+5000
+36 - NextBip*
+stmt s;
+Select s such that NextBip*(78, s)
+none
+5000
+37 - NextBip*
+constant c;
+Select c such that NextBip*(51, 15)
+true
+5000
+38 - NextBip*
+prog_line n;
+Select n such that NextBip* (74, n)
+none
+5000
+39 - NextBip*
+prog_line n;
+Select n such that NextBip* (75, n)
+1,2,3,26,27,28,29,30,31,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,56,57,58,59,69,70,71,72,73,75,76,77,78
+5000
+40 - NextBip* 
+stmt s;
+Select s such that NextBip*(s, 34)
+50,51,52,53,54,55,62
+5000
+41 - NextBip*
+stmt s;
+Select s such that NextBip*(34, s)
+1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,69,70,76,77,78,56,57,58,59,63,64,65,66,67,68
+5000
+42 - NextBip* 1 common
+prog_line n;
+Select n such that NextBip* (74, n) and NextBip* (n, 75)
+none
+5000
+43 - NextBip* 1 common
+prog_line n;
+Select n such that NextBip* (n, 49) and NextBip* (39, n)
+1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,56,57,58,59,63,64,65,66,67
+5000
+44 - NextBip* no common
+prog_line n;
+Select n such that NextBip* (33,33) and NextBip* (80, n)
+none
+5000
+45 - NextBip*
+stmt s1, s2;
+Select s1 such that NextBip*(s1, s2)
+1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,69,70,71,72,73,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94
+5000
+46 - NextBip*
+stmt s1, s2;
+Select s2 such that NextBip*(s1, s2)
+1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,63,64,65,66,67,68,70,72,73,74,75,76,77,78,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95
+5000

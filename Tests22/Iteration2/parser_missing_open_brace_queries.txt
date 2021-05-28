@@ -1,0 +1,5 @@
+1 - First query (valid)
+
+Select BOOLEAN such that 1 = 1
+TRUE
+5000

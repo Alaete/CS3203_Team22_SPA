@@ -1,0 +1,58 @@
+procedure main {
+    while (!( ( 8 > 5) && ( EW == g))) {																				//1
+        Jj = 16 + a + Os % 1;																							//2
+        g = h + Dn;																										//3
+        print  Sa;																										//4
+        if (!( ( g != hN) && ( 5 + 16 <= 8))) then {																	//5
+            h = gq % 42;																								//6
+        } else {	
+            Jj = 42 - hN + 8 / 94;																						//7
+            read  x;																									//8
+            EW = g - 16 - Sa;																							//9
+        }
+        f = Dn + h + ae;																								//10
+        while (!( a > 9)) {																								//11
+            Os = f - 94 - gq / ae;																						//12
+            if ( ( ( ae <= 12) || ( 94 >= 16)) || ( ( 12 != Sa) || ( W <= Sa + 8))) then {								//13
+                hN = 9 - 48 - 5 * Os;																					//14
+            } else {
+                Sa = 13 - 48 + h * Os;																					//15
+            }
+            Sa = h + R - 1;																								//16
+        }
+        read  EW;																										//17
+        print  g;																										//18
+        read  W;																										//19
+    }
+    print  Dn;																											//20
+    print  Sa;																											//21
+    while ( ( ( 12 + Os >= 16 + f) && ( 8 >= R)) && ( ( 16 + ae >= Os - 1) && ( 5 == Dn + 94))) {						//22
+        if ( ( ( 42 >= Jj - 16) || ( 5 > 48)) || ( ( 1 == a) || ( 12 < ae))) then {										//23
+            print  Jj;																									//24
+            if ( ( ( ae - 16 >= ae) || ( 48 + EW >= 48 - 1)) || ( ( 42 - R > 9 + Os) && ( Sa < 1))) then {				//25
+                while ( ( ( 12 < 16 - g) && ( 94 > EW)) && (!( h >= W))) {												//26
+                    read  Os;																							//27
+                    print  Dn;																							//28
+                    read  Os;																							//29
+                }
+                if ( R == 12) then {																					//30
+                    print  Os;																							//31
+                    read  g;																							//32
+                } else {
+                    print  Dn;																							//33
+                }
+            } else {
+                print  Sa;																								//34
+            }
+        } else {
+            read  Dn;																									//35
+        }
+    }
+	print i; 																											//36
+}
+
+procedure second {
+	call main;																											//37
+	read x;																												//38
+	print z;																											//39
+}

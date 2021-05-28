@@ -1,0 +1,103 @@
+variables in first: x, y, a, d, t, f, z, first, b
+variables in second: var1, var2, var3, var4, someVeryLongVarName, someOtherLongVarName, d
+variables in third: cs, is, ba, fass, ce, ee, ds
+
+procedure first {
+	read x;												//1
+	
+	y = a + (2 * d)/7 - t % f;							//2
+	
+	if ((y <= 20) || ((x != y) && (f > 30))) then {		//3
+		while (x < 20) {								//4
+			print d;									//5
+			t = f * 3 * x % z + 20;						//6
+			
+			if (t == 50) then {							//7
+				if ((f - 8) > 50) then {				//8
+					print f;							//9
+					call second;						//10
+				} else {
+					print z;							//11
+					read f;								//12
+					f = a + d - z % 5 * 3;				//13
+				}
+				
+				z = 3 * x;								//14
+
+				while ((20 * 3) < y) {					//15
+					y = t % f + 5 * d / 6;				//16
+					while (t < 10) {					//17
+						print t;						//18
+						t = t + 1;						//19
+					}
+				}
+
+			} else {
+				a = 0;									//20
+			}
+			
+			x = x + 1;									//21
+			
+			if (((3 - 1)*6) > (d)) then {				//22
+				first = d * 24;							//23
+			} else {
+				print first;							//24
+			}
+		}
+	} else {
+		read first;										//25
+	}
+	
+	while (z < 2) {										//26
+		read z;											//27
+		z = 3 * 20 + d;									//28
+	}
+	
+	a = 5*3+b/8*9;										//29
+	
+}
+
+procedure second {
+	while (var1 != var2) {																									//30
+		read var1; 																											//31
+		while (((!(var3 == 20)) && (var4 != 40)) || ((someVeryLongVarName < someOtherLongVarName) && (var2 <= var1))) {		//32
+			var1 = var2 + 3;																								//33
+			read var2;																										//34
+			print someOtherLongVarName;																						//35
+		}
+	}
+	
+	if (var3 > 7) then {																									//36
+		var4 = var2*4;																										//37
+		var3 = d + 3 * var1 + 2 / (var4+20);																				//38
+	} else {
+		read var4;																											//39
+	}
+	call third;																												//40
+}
+
+procedure third {
+	read cs;													//41
+	
+	is = fass + (ee%2 * (5 - ce%20+(6 * ds)));					//42
+	
+	while (is != 4) {											//43													
+		if (fass < ds) then {									//44
+			print ds;											//45
+			read ee;											//46
+			
+			while(4 < ba) {										//47
+				print ba; 										//48
+				cs = ba + 60/ce;								//49
+				ce = 3-fass+4;									//50
+			}
+			
+			fass = 20*(4)+ce-20+(1*7)/0+9;						//51
+			
+		} else {
+			print ce;											//52
+		}
+	}
+	
+	print ba;													//53
+}

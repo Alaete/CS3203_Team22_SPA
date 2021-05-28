@@ -1,0 +1,130 @@
+1 - Follows, Parent, Uses, 1 common synonym (Valid)
+stmt s; assign a; print p; if ifs; variable v;
+Select a.stmt# such that Follows(a, p) and Parent(ifs, a) and Uses(a, v)
+21, 25
+5000
+2 - Follows, Parent*, Uses (Valid)
+stmt s; call c; while w;
+Select <c, s, w> such that Follows(c, s) such that Parent*(w, c) such that Uses(c, "Bf") pattern w("Z", _)
+12 13 3
+5000
+3 - Follows*, Parent, Modifies (Valid)
+stmt s; read r; print p; if ifs; variable v;
+Select BOOLEAN such that Follows*(r, p) and Parent(ifs, p) and Modifies(ifs, v) pattern ifs("yU", _, _)
+FALSE
+5000
+4 - Follows*, Parent*, Calls (Valid)
+stmt s1, s2; procedure p;
+Select s1 such that Follows*(s1, s2) such that Parent*(20, s1) and Calls(p, "C") with p.procName = "G"
+21,22,24,25,26,27,29,31,33
+5000
+5 - Parent, Follows, Uses, connecting synonyms (Valid)
+stmt s; if ifs1, ifs2; variable v;
+Select <ifs1.stmt#, s.stmt#> such that Parent(ifs1, ifs2) and Follows(ifs2, s) and Uses(s, v)
+23 33,23 36,49 56
+5000
+6 - Parent, Follows*, Uses (Valid)
+stmt s1, s2; while w; assign a; variable v;
+Select s1.stmt# such that Parent(w, s1) and Follows*(s1, s2) and Uses(s1, "sE") with s1.stmt# = a.stmt#
+43
+5000
+7 - Parent, Parent, Parent, connecting synonyms(Valid)
+if ifs1, ifs2; while w1, w2;
+Select ifs1 such that Parent(ifs1, w1) such that Parent(w1, w2) and Parent(w2, ifs2)
+40
+5000
+8 - Parent*, Modifies, Calls*, no common synonyms (Valid)
+while w; prog_line n; procedure p, q; variable v;
+Select n with n = w.stmt# such that Parent*(n, _) and Modifies(p, v) and Calls*(q, "C")  
+3,6,8,30,42,47,48,51,59,61
+5000
+9 - Parent*, Next, Affects (Valid)
+if ifs; assign a1, a2; stmt s; variable v;
+Select ifs such that Parent*(ifs, a1) and Next(a1, s) such that Affects(a1, a2) pattern a1(v, _)
+20,23,27,39,40,49,50,57,60
+5000
+10 - Uses, Modifies, Follows (Valid)
+stmt s; print p; assign a; if ifs;
+Select s such that Uses(p, "G") and Modifies(a, "G") and Follows(s, a) pattern a(_, _"9"_) with s.stmt# = ifs.stmt#
+50
+5000
+11 - Uses, Follows*, Parent, 1 common synonym (Valid)
+stmt s1, s2; assign a; print p; variable v;
+Select s1 such that Uses("G", v) and Follows*(s1, p) and Parent(s2, a) with v.varName = "sE"
+4,5,6,7,12,15,21,24,25
+5000
+12 - Modifies, Calls, Next* (Valid)
+stmt s1, s2; procedure p, q; variable v; assign a;
+Select s1 such that Modifies(p, v) and Calls(p, q) and Next*(s1, a) with p.procName = "K" with "G" = q.procName
+1,2,3,4,5,6,7,8,9,10,11,12,13,14,17,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,39,40,41,42,43,44,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63
+5000
+13 - Modifies, Calls*, Next, no common synonyms, return type diff (Valid)
+stmt s; procedure p, q; assign a; variable v; prog_line n; read r; print pr;
+Select n such that Modifies(a, v) and Calls*(p, q) and Next(pr, r)
+1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64
+5000
+14 - Calls, Follows*, Parent* (same as q4) (Valid)
+stmt s1, s2; procedure p;
+Select s1 such that Calls(p, "C") with p.procName = "G" such that Follows*(s1, s2) and Parent*(20, s1)
+21,22,24,25,26,27,29,31,33
+5000
+15 - Calls, Modifies, Next* (same as q12) (Valid) 
+stmt s1, s2; procedure p, q; variable v; assign a;
+Select s1 such that Calls(p, q) and Modifies(p, v) and Next*(s1, a) with p.procName = "K" with "G" = q.procName
+1,2,3,4,5,6,7,8,9,10,11,12,13,14,17,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,39,40,41,42,43,44,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63
+5000
+16 - Next*, Next*, Next*, no common synonyms (Valid)
+stmt s1, s2; assign a1, a2; print p; read r; variable v;
+Select a1.stmt# pattern a1(v, _"G"_) such that Next*(s1, s2) and Next*(p, a1) and Next*(r, a2)
+4,32,54,63
+5000
+17 - Affects, Affects, Affects (Valid)
+assign a1, a2; prog_line n1, n2; stmt s1, s2;
+Select n1 with n1 = a1.stmt# such that Affects(a1, a2) such that Affects(n1, n2) such that Affects(s1, s2)
+21,32,54,56,58,63
+5000
+18 - Affects*, Affects*, Affects* (Valid)
+assign a1, a2; prog_line n1, n2; stmt s1, s2;
+Select n1 with n1 = a1.stmt# such that Affects*(a1, a2) such that Affects*(n1, n2) such that Affects*(s1, s2)
+21,32,54,56,58,63
+5000
+19 - Next, Next*, Affects (Valid)
+assign a; stmt s1, s2; prog_line n; 
+Select <s1, n> such that Next(s1, n) and Next*(s1, s2) and Affects(s1, s2) with 58 = s1.stmt# 
+58 48
+5000
+20 -  Next, Next*, Affects* (Valid)
+assign a; stmt s1, s2; prog_line n; 
+Select <s1, n> such that Next(s1, n) and Next*(s1, s2) and Affects*(s1, s2) with 58 = s1.stmt# 
+58 48
+5000
+21 - Follows*, Parent*, pattern while (Valid)
+stmt s; assign a; while w;
+Select w such that Follows*(s, a) and Parent*(w, a) pattern w("G", _)
+47,48
+5000
+22 - Follows*, Calls, with IDENT = proc.attr (Valid)
+stmt s; while w; procedure p, q;
+Select <w, p> such that Follows*(s, w) and Calls(p, q) with "C" = q.procName
+3 G,3 K,6 G,6 K,30 G,30 K,42 G,42 K,47 G,47 K
+5000
+23 - Uses, Follows* (Valid)
+stmt s; procedure p; variable v;
+Select v with v.varName = "G" such that Uses(p, v) with "K" = p.procName such that Follows*(43, s)
+G
+5000
+24 - Calls, Follows*, no common synonyms, attr=attr (Valid)
+procedure p, q; call c; stmt s;
+Select p with q.procName = c.procName such that Calls(p, q) and Follows*(s, c)
+K
+5000
+25 - with, no synonyms used (Valid)
+prog_line n1, n2;
+Select n1 with n1 = n2
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64
+5000
+26 - with, no synonyms used (Valid)
+prog_line n1; read r;
+Select n1 with r.stmt# = n1
+2, 15, 24, 38, 41, 53
+5000

@@ -1,0 +1,10 @@
+procedure one {
+	read a; 
+	print two;
+}
+
+procedure two {
+	b = 3 + four;
+	read c;
+	print c;
+}

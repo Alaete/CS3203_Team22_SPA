@@ -1,0 +1,68 @@
+procedure main {
+    P = y - l - 8 % 4;																										//1
+    while ( ( 53 >= 64) && ( 7 + 25 != 53)) {																				//2
+        print  xF;																											//3
+        while (!( ( 23 - oY > 4 - FO) || ( 43 - Lk != 43 - P))) {															//4
+            while ( ( 53 == oY + 53) || ( r <= 64)) {																		//5
+                if ( (!( 4 == 64 + g)) || ( y - 43 > Z)) then {																//6
+                    g = 53 / oY;																							//7
+                    if ( ( ( 43 != 4) && ( P < jk)) && ( FO - Lk >= oY)) then {												//8
+                        r = p * 4;																							//9
+                        while ( ( ( 64 < 23) || ( 8 > WL)) || ( oY <= 53)) {												//10
+                            while ( ( 7 < r) || ( ( 7 <= p) || ( 4 >= 8))) {												//11
+                                read  xF;																					//12
+                            }
+                        }
+                    } else {
+                        if ( (!( 4 <= 53)) && ( ( 25 != l) || ( qc + xF < xF - Z))) then {									//13
+                            print  g;																						//14
+                        } else {
+                            if ( ( 4 > p) && (!( jk >= 23))) then {															//15
+                                while ( ( ( Lk + r == 43) && ( Z + qc == 25 + 25)) && ( ( l <= P) && ( 43 == l))) {			//16
+                                    while ( r < 4) {																		//17
+                                        print  FO;																			//18
+                                    }
+                                }
+                            } else {
+                                print  P;																					//19
+                            }
+                        }
+                        read  r;																							//20
+                    }
+                    read  y;																								//21
+                    xF = p - 7 + 43 * P;																					//22
+                    read  Z;																								//23
+                    r = WL - g / 8;																							//24
+                } else {
+                    print  FO;																								//25
+                }
+                xF = 8 - y % P;																								//26
+                y = l - 7 - 8 % 4;																							//27
+                if ( ( ( oY == 25) || ( FO >= 8)) || ( 64 < 4 + g)) then {													//28
+                    if ( (!( 4 > FO)) && (!( 8 + y > qc))) then {															//29
+                        while ( y - y < 25) {																				//30
+                            if ( 23 - 8 <= 7) then {																		//31
+                                if ( (!( Lk != r)) || ( 4 > oY + P)) then {													//32
+                                    print  Z;																				//33
+                                } else {
+                                    l = l + xF + Lk * 4;																	//34
+                                }
+                            } else {
+                                FO = 23 - 7 - 25 * 8;																		//35
+                            }
+                        }
+                    } else {
+                        read  xF;																							//36
+                    }
+                } else {
+                    if (!( 53 > 25)) then {																					//37
+                        print  y;																							//38
+                    } else {	
+                        Lk = 43 - Z + Z % 25;																				//39
+                    }
+                }
+            }
+        }
+    }
+	
+}

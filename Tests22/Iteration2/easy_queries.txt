@@ -1,0 +1,335 @@
+1 - Uses and Modifies, 1 synonym in common (Valid)
+variable v; 
+Select v such that Uses(8, v) such that Modifies(16, v)
+L
+5000
+2 - Uses and Modifies, 1 synonym in common (Valid)
+variable v;
+Select v such that Modifies(1, v) such that Uses(8, v)
+L
+5000
+3 - Uses and Modifies, 1 synonym in common (Valid)
+variable v; 
+Select v such that Uses(2, v) and Modifies(11, v)
+m, L
+5000
+4 - Uses and Modifies, 1 synonym in common (Valid)
+variable v; stmt s;
+Select v such that Modifies("main", v) and Uses(9, v)
+L
+5000
+5 - Uses and Modifies, 2 synonyms common (Valid)
+variable v; procedure p;
+Select v such that Uses(p, v) such that Modifies(p, v)
+L, m
+5000
+6 - Uses and Modifies, 2 synonyms common (Valid)
+variable v; while w;
+Select ifs such that Modifies(w, v) such that Uses(w, v)
+none
+5000
+7 - Uses and Modifies, no common synonym (Valid)
+procedure p; variable v; 
+Select p such that Uses(10, "m") and Modifies(p, v)
+main
+5000
+8 - Uses and Modifies, no common synonym (Valid)
+procedure p; variable v; read r;
+Select BOOLEAN such that Modifies(r, "L") and Uses(p, v)
+TRUE
+5000
+9 - Uses and Modifies, no common synonym, 1 wildcard (Valid)
+procedure p; variable v; while w;
+Select v such that Uses(w, _) and Modifies(p, v)
+L, m
+5000
+10 - Uses and Modifies, no common synonym, 1 wildcard (Valid)
+procedure p; variable v; 
+Select v such that Modifies(p, _) and Uses(2, v)
+L,yE,m,f
+5000
+11 - Uses and Modifies, no common synonym, no common ans (Valid)
+while w; variable v; print p;
+Select v such that Uses(p, "m") and Modifies(w, v)
+none
+5000
+12 - Uses and Modifies, no common synonym, no common ans (Valid)
+read r; if ifs; variable v;
+Select v such that Modifies(r, _) and Uses(ifs, _)
+L,FQ,m,f,yE
+5000
+13 - Uses and Modifies, no common synonym, select diff synonym (Valid)
+procedure p; variable v; assign a;
+Select a such that Modifies(p, _) and Uses(2, v)
+1, 6, 14, 15
+5000
+14 - Uses and Follows, 1 synonym in common (Valid)
+stmt s,s1;
+Select s such that Uses(s, "L") such that Follows(s, s1)
+7, 2
+5000
+15 - Uses and Follows, 1 synonym in common (Valid)
+stmt s, s1; 
+Select s such that Follows(s, 2) such that Uses(s, "L")
+none
+5000
+16 - Uses and Follows, 1 synonym in common (Valid)
+stmt s,s1; variable v;
+Select s such that Uses(s, v) and Follows(s, 5)
+4
+5000
+17 - Uses and Follows, 1 synonym in common (Valid)
+stmt s; while w;
+Select s such that Follows(s, 10) and Uses(w, "m")
+7
+5000
+18 - Uses and Follows, no common synonyms (Valid)
+stmt s; print p; while w;
+Select s such that Uses(p, "m") and Follows(w, s)
+6, 10
+5000
+19 - Uses and Follows, no common synonyms (Valid)
+stmt s; if ifs; print p;
+Select p such that Follows(p, 11) and Uses(ifs, "yE")
+10
+5000
+20 - Uses and Follows, no common synonyms, 1 wildcard (Valid)
+stmt s; assign a; while w;
+Select s such that Uses(a, _) and Follows(s, w)
+1, 6
+5000
+21 - Uses and Follows, no common synonyms, 1 wildcard (Valid)
+stmt s; while w;
+Select s such that Follows(s, _) and Uses(w, "L")
+10,1,13,2,3,4,6,7,14,15
+5000
+22 -  Uses and Follows, no common synonyms, no common ans (Valid)
+stmt s; assign a; while w;
+Select s such that Uses(a, "yE") and Follows(s, w)
+1, 6
+5000
+23 - Uses and Follows, no common synonyms, no common ans (Valid)
+read r; stmt s; assign a;
+Select s such that Follows(s, r) and Uses(a, "f")
+15 
+5000
+24 - Uses and Follows, no common synonym, select diff synonym (Valid)
+assign a; variable v; print p; stmt s;
+Select p such that Uses(a, v) and Follows(14, s)
+3, 4, 5, 9, 10, 12, 13
+5000
+25 - Uses and Follows*, 1 common synonym (Valid)
+stmt s, s1; 
+Select s such that Uses(s, "m") and Follows*(s, s1)
+2, 3, 7, 10
+5000
+26 - Uses and Follows*, 1 common synonym (Valid)
+stmt s; print p;
+Select p such that Follows*(s, p) and Uses(s, "f")
+5, 10
+5000
+27 - Uses and Follows*, 0 common synonym, no common ans (Valid)
+stmt s; while w; assign a;
+Select s such that Uses(s, "var1") and Follows*(w, a)
+none
+5000
+28 - Uses and Follows*, 0 common synonym, no common ans (Valid)
+stmt s; while w; if ifs; assign a;
+Select s such that Follows*(ifs, w) and Uses(a, "FQ")
+none
+5000
+29 - Uses and Follows*, both ans dont exist (Valid)
+stmt s; if ifs; while w;
+Select s such that Uses(s, "var1") and Follows*(ifs, w)
+none
+5000
+30 - Uses and Parent, 1 common synonym, no common ans (Valid)
+assign a; stmt s, s1; while w;
+Select s such that Uses(s, "FQ") and Parent(w, s)
+none
+5000
+31 - Uses and Parent, 1 common synonym (Valid)
+stmt s; while w;
+Select s such that Parent(w, s) such that Uses(s, "L")
+8, 9
+5000
+32 - Uses and Parent*, 1 common synonym (Valid)
+stmt s; print p;
+Select s such that Uses(s, "L") and Parent*(s, p)
+2, 7, 8
+5000
+33 - Uses and Parent*, 1 common synonym (Valid)
+stmt s; if ifs; while w; variable v;
+Select s such that Parent*(ifs, w) and Uses(w, v)
+none
+5000
+34 - Uses and Parent*, no common synonym (Valid)
+stmt s; if ifs; while w; assign a;
+Select s such that Uses(a, "L") and Parent*(ifs, w)
+none
+5000
+35 - Modifies and Parent, 1 synonym common (Valid)
+assign a; if ifs;
+Select a such that Modifies(a, "m") such that Parent(ifs, a)
+14, 15
+5000
+36 - Modifies and Parent, 1 synonym common (Valid)
+read r; if ifs; variable v;
+Select r such that Parent(ifs, r) such that Modifies(r, v)
+16
+5000
+37 - Modifies and Parent, 1 synonym common (Valid)
+if ifs; assign a;
+Select a such that Modifies(ifs, "m") and Parent(ifs, a)
+14, 15
+5000
+38 - Modifies and Parent, 1 synonym common (Valid)
+stmt s; while w; print p;
+Select s such that Parent(w, p) and Modifies(w, "FQ")
+none
+5000
+39 - Modifies and Parent*, 1 does not exist (Valid)
+stmt s, s1; variable v;
+Select v such that Modifies("maln", v) and Parent*(s, s1)
+none
+5000
+40 - Modifies and Parent*, 1 does not exist (Valid)
+stmt s; assign a; variable v; while w; if ifs;
+Select s such that Modifies(a, v) such that Parent*(ifs, w)
+none
+5000
+41 - Modifies and Follows, 1 synonym common (Valid)
+assign a; variable v; while w;
+Select a.stmt# such that Modifies(a, v) such that Follows(a, w)
+1, 6
+5000
+42 - Modifies and Follows, 1 synonym common (Valid)
+read r; assign a;
+Select a such that Follows(a, r) such that Modifies(r, "L")
+15
+5000
+43 - Modifies and Follows, 1 synonym common (Valid)
+assign a; while w;
+Select a such that Modifies(a, "L") and Follows(a, w)
+1
+5000
+44 - Modifies and Follows, 1 synonym common (Valid)
+stmt s; call c; assign a; while w;
+Select a such that Follows(a, w) and Modifies(a, "m")
+6
+5000
+45 - Modifies and Follows, 1 synonym common (Valid)
+stmt s; assign a; if ifs;
+Select s such that Modifies(a, "m") and Follows(a, ifs)
+none
+5000
+46 - Modifies and Follows, no common synonyms (Valid)
+stmt s; read r; assign a;
+Select a such that Modifies(r, "L") and Follows(15, s)
+1, 6, 14, 15
+5000
+47 - Modifies and Follows, no common synonyms (Valid)
+stmt s; read r; while w;
+Select s such that Follows(s, w) and Modifies(r, "m")
+none
+5000
+48 - Modifies and Follows*, no common synonyms (Valid)
+stmt s; if ifs; assign a;
+Select a such that Modifies(s, "m") and Follows*(a, ifs)
+1, 6
+5000
+49 - Modifies and Follows*, no common synonyms (Valid)
+stmt s; print p; while w; read r;
+Select s such that Follows*(w, p) and Modifies(r, "L")
+1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16
+5000
+50 - Modifies and Follows*, 1 synonym common (Valid)
+stmt s; assign a; if ifs;
+Select a such that Modifies(a, "L") and Follows*(a, ifs)
+1
+5000
+51 - Modifies and Follows*, 1 synonym common (Valid)
+while w; variable v; if ifs;
+Select v such that Follows*(w, ifs) and Modifies(w, v)
+none
+5000
+52 - Parent and Follows, 1 common synonym (Valid)
+stmt s; while w; print p;
+Select s such that Parent(w, w) and Follows(w, p)
+none
+5000
+53 - Parent and Follows, 2 common synonyms (Valid)
+stmt s, s1; 
+Select s such that Parent(s, s1) and Follows(s, s1)
+none
+5000
+54 - Parent and Follows*, 1 synonym common (Valid)
+print pr, pr1; while w; procedure p; assign a;
+Select <p, pr> such that Parent(w, pr) and Follows*(pr, pr1)
+main 3, main 4
+5000
+55 - Parent and Follows*, 1 synonym common, 1 does not exist (Valid)
+stmt s; assign a; print p; if ifs;
+Select s such that Parent(ifs, p) and Follows*(a, p)
+none
+5000
+56 - Parent* and Follows, 1 synonym common (Valid)
+print p, p1; assign a; if ifs;
+Select ifs.stmt# such that Parent*(ifs, p) and Follows(p1, ifs)
+11
+5000
+57 - Parent* and Follows, no common (Valid)
+assign a; if ifs; print p;
+Select p such that Follows(p, 14) and Parent*(ifs, a)
+13
+5000
+58 - Parent* and Follows*, 1 synonym common (Valid)
+if ifs; print p; assign a; procedure proc;
+Select <p.stmt#, proc.procName> such that Parent*(ifs, p) and Follows*(p, a)
+13 main
+5000
+59 - Parent* and Follows*, 1 synonym common (Valid)
+while w; if ifs; print p;
+Select w such that Follows*(w, p) and Parent*(w, ifs)
+none
+5000
+60 - Pattern and Pattern, both wildcard (Valid)
+assign a, a1;
+Select a pattern a(_, _) pattern a1(_, _)
+1, 6, 14, 15
+5000
+61 - Pattern and Pattern, both wildcard (Valid)
+while w, w1;
+Select w pattern w(_, _) pattern w1(_, _)
+2, 7, 8
+5000
+62 - Pattern and Pattern, both wildcard (Valid)
+if ifs, ifs1;
+Select ifs pattern ifs(_, _, _) pattern ifs1(_, _, _)
+11
+5000
+63 - Pattern and Pattern, first wildcard (Valid)
+assign a;
+Select a pattern a(_, "f + 7") pattern a(_, _)
+14
+5000
+64 - Pattern and Pattern (Valid)
+assign a;
+Select a pattern a("m", _"f"_) pattern a(_, _)
+6, 14
+5000
+65 - Pattern and Pattern, same expr (Valid)
+assign a; variable v;
+Select a pattern a(v, "f + 7") pattern a(v, "f               +       7 ")
+14
+5000
+66 - Pattern and Pattern, same expr (Valid)
+while w; variable v;
+Select w pattern w("L", _) pattern w(v, _)
+2, 8
+5000
+67 - Pattern and Pattern, same expr (Valid)
+assign a; variable v;
+Select a pattern a("m", _) pattern a(v, _"7"_)
+14
+5000

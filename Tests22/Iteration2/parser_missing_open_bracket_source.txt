@@ -1,0 +1,23 @@
+procedure main {
+	print Line10Missing;
+    read  f;
+    print  f;
+    read  wD;
+    while (!( 8 <= Il)) {
+        read  Ym;
+    }
+    Ny = Il + f;
+    while  Ym == Il) {
+        print  Ym;
+        print  Ym;
+        while ( ( Ym < 8) || ( 9 <= 7)) {
+            read  Ym;
+            read  wD;
+        }
+        while (!( Ym <= 7)) {
+            f = 6 + 4;
+            print  Ym;
+        }
+        read  f;
+    }
+print i; }

@@ -1,0 +1,36 @@
+procedure one {
+	read a;
+	if (a <= 10) then {
+		call two;
+	} else {
+		call three;
+	}
+}
+
+procedure two {
+	read b;
+	c = 1 + 2 * 3;
+	call three;
+}
+
+procedure three {
+	while (var1 < 100) {
+		call finalProcedure;
+	}
+	call four;
+}
+
+procedure four {
+	d = 5;
+	e = d * 3;
+	f = d + e;
+	print f;
+}
+
+procedure midProcedure {
+	call finalProcedure;
+}
+
+procedure finalProcedure {
+	read four;
+}

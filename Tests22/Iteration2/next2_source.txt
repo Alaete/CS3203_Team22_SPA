@@ -1,0 +1,10 @@
+procedure pen {
+    while (x < 100) {
+        if (y <= 200) then {
+            read y;	
+            y = y + 10;		
+        } else {
+			x = x * 2;		
+		}
+    }
+}

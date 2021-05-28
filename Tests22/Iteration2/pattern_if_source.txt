@@ -1,0 +1,70 @@
+procedure main {
+    if (!(!( 2 >= 2))) then {														
+        if (!( ( A == 8) && ( 4 < 6))) then {										
+            if (!( ( 7 != JU) || ( 9 <= 9))) then {									
+                read  I;															
+                while ( 2 < 9) {													
+                    if ( 2 == 8) then {												
+                        if (!( ( TG >= 2) || ( JU == I))) then {					
+                            while ( B + JU == 9) {								
+                                print  JU;										
+                            }
+                        } else {
+                            read  y;												
+                        }
+                    } else {
+                        print  A;													
+                    }
+                }
+            } else {
+                while ( ( ( I != 2) && ( JU + W == 2 - bh)) || (!( JU > 6))) {		
+                    print  Jm;														
+                }
+            }
+            if ( Z < 9) then {														
+                bh = 9 + 9 + 6 * A;													
+            } else {
+                if (!( ( 2 != 9) && ( Jm == A))) then {								
+                    A = W % A;														
+                } else {
+                    if ( (!( JU == 9)) && ( ( 4 != 6) || ( A >= Z))) then {										
+                        while ( ( ( B == TG) && ( 2 != 2 + 9)) && ( ( 2 + 9 >= B) || ( y != W))) {			
+                            if ( ( ( 9 != JU) && ( 7 + Z >= A)) && ( ( vj + 2 < JU) && ( A >= H))) then {	
+                                while ( (!( 8 - Jm == N)) || (!( 4 != 2))) {									
+                                    if ( (!( H <= M + N)) && ( Z < Jm)) then {								
+                                        while ( ( ( B > Jm - W) && ( 7 < Jm)) || (!( 2 <= 9))) {				
+                                            if ( 2 >= y) then {												
+                                                read  y;														
+                                            } else {
+                                                while ( (!( Z != Z)) || ( ( Z <= 8) || ( 2 < y - 2))) {			
+                                                    print  W;													
+                                                }
+                                            }
+                                        }
+                                    } else {
+                                        while (!( ( 9 <= 9 + M) || ( 7 >= bh + I))) {							
+                                            print  N;															
+                                        }
+                                    }
+                                }
+                            } else {
+                                Z = vj + 7 - 2 / 8;															
+                            }
+                        }
+                    } else {
+                        TG = Jm + 7 + JU;		
+                    }
+                }
+            }
+        } else {
+            if (!( ( M + 9 <= W) || ( 2 == JU))) then {		
+                read  JU;									
+            } else {
+                read  N;								
+            }
+        }
+    } else {
+        I = 9 + vj / H;										
+    }
+	print i;											
+}

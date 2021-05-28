@@ -1,0 +1,109 @@
+procedure K {
+    Z = sE + Z + sE % 9;                                                           //1
+    read  Z;                                                                       //2
+    while ( ( ( yU != Z) && ( 32 != 32)) && ( ( yU > 9) && ( 32 != 25))) {         //3
+        G = G * G;                                                                 //4
+        print  yU;                                                                 //5
+        while ( (!( 9 == 25 + 59)) || (!( Z + G != 91 - G))) {                     //6
+            if (!( ( Bf <= 91) && ( 32 >= 32))) then {                             //7
+                while (!( 72 <= yU)) {                                             //8
+                    call  G;                                                       //9
+                }
+            } else {
+                sE = 25 + 59 + yU * 72;                                            //10
+            }
+            print  Bf;                                                             //11
+        }
+		call  G;                                                                         //12
+        print  Z;                                                                  //13
+    }
+    if ( Bf - 25 <= 9 + 59) then {                                                 //14
+        read  sE;                                                                  //15
+        print  Bf;                                                                 //16
+    } else {
+        if ( 72 <= 9 - 72) then {                                                  //17
+            G = 9 * yU;                                                            //18
+        } else {
+            call  C;                                                               //19
+        }
+    }
+}
+
+procedure G {
+    if (!( ( Bf != 32) || ( yU >= 32))) then {                                     //20
+        yU = 67 * sE;                                                              //21
+        print  G;                                                                  //22
+        if ( ( ( 9 < G - 9) || ( 9 > 7)) || (!( Bf < 25))) then {                  //23
+            read  G;                                                               //24
+            sE = 9 % yU;                                                           //25
+            print  sE;                                                             //26
+            if ( ( 9 != 9) && ( ( 25 == 32) || ( 32 > 25 + 59))) then {            //27
+                call  C;                                                           //28
+            } else {
+				call  C;                                                                       //29
+                while ( 9 != Bf) {                                                 //30
+                    print  Bf;                                                     //31
+                    G = 91 + 9 - 32 * G;                                           //32
+                }
+            }
+            if ( ( ( G != 32) && ( 67 > Z)) || ( 25 >= 25 + 67)) then {            //33
+                print  sE;                                                         //34
+            } else {
+                G = 25 % 9;                                                        //35
+            }
+            Bf = 59 * Z;                                                           //36
+        } else {
+            G = 32 + 72 - 59 * sE;                                                 //37
+        }
+    } else {
+        read  G;                                                                   //38
+    }
+}
+
+procedure C {
+    if ( Bf - G >= Bf) then {                                                      //39
+        if ( ( 59 <= 59) && (!( 7 - 9 >= sE))) then {                              //40
+            read  Z;                                                               //41
+            while (!(!( 59 == 9 - yU))) {                                          //42
+                Z = sE + 91 - 9;                                                   //43
+                G = Bf - 7;                                                        //44
+            }
+            Z = Bf + yU * Bf;                                                      //45
+        } else {
+            print  yU;                                                             //46
+            while (!( ( 25 - 9 <= 59) || ( G != 25 + 91))) {                       //47
+                while (!(!( 67 >= G - G))) {                                       //48
+                    if (!( ( Bf == 59) && ( Bf + 25 == 91))) then {                //49
+                        if (!( ( 67 != sE) || ( 67 + 72 <= yU))) then {            //50
+                            while ( (!( G > G)) && ( 72 >= yU + 59)) {             //51
+                                print  Z;                                          //52
+                                read  Bf;                                          //53
+                            }
+                            Bf = 72 * G;                                           //54
+                        } else {
+                            G = 67 - 9 - 25 * yU;                                  //55
+                        }
+                        G = 9 * yU;                                                //56
+                    } else {
+                        if (!(!( 32 <= yU - yU))) then {                           //57
+                            G = 9 * yU;                                            //58
+                        } else {
+                            while ( 7 + 25 > 9) {                                  //59
+                                if ( G >= G - Bf) then {                           //60
+                                    while ( 32 < 91) {                             //61
+                                        sE = 67 + Bf + yU;                         //62
+                                    }
+                                } else {
+                                    Bf = G;                                        //63
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    } else {
+        Bf = 67 + 59 % 9;                                                          //64
+    }
+}
+

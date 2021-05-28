@@ -1,0 +1,99 @@
+procedure first {
+	read x;												
+	
+	y = a + (2 * d)/7 - t % f;							
+	
+	if ((y <= 20) || ((x != y) && (f > 30))) then {		
+		while (x < 20) {								
+			print d;									
+			t = f * 3 * x % z + 20;						
+			
+			if (t == 50) then {							
+				if ((f - 8) > 50) then {				
+					print f;							
+					call second;						
+				} else {
+					print z;							
+					read f;								
+					f = a + d - z % 5 * 3;				
+				}
+				
+				z = 3 * x;								
+
+				while ((20 * 3) < y) {					
+					y = t % f + 5 * d / 6;				
+					while (t < 10) {					
+						print t;						
+						t = t + 1;						
+					}
+				}
+
+			} else {
+				a = 0;									
+			}
+			
+			x = x + 1;									
+			
+			if (((3 - 1)*6) > (d)) then {				
+				first = d * 24;							
+			} else {
+				print first;							
+			}
+		}
+	} else {
+		read first;										
+	}
+	
+	while (z < 2) {										
+		read z;											
+		z = 3 * 20 + d;									
+	}
+	
+	a = 5*3+b/8*9;										
+	
+}
+
+procedure second {
+	while (var1 != var2) {																									
+		read var1; 																											
+		while (((!(var3 == 20)) && (var4 != 40)) || ((someVeryLongVarName < someOtherLongVarName) && (var2 <= var1))) {		
+			var1 = var2 + 3;																								
+			read var2;																										
+			print someOtherLongVarName;																						
+		}
+	}
+	
+	if (var3 > 7) then {																									
+		var4 = var2*4;																										
+		var3 = d + 3 * var1 + 2 / (var4+20);																				
+	} else {
+		read var4;																											
+	}
+	call third;																												
+}
+
+procedure third {
+	read cs;													
+	
+	is = fass + (ee%2 * (5 - ce%20+(6 * ds)));					
+	
+	while (is != 4) {																								
+		if (fass < ds) then {									
+			print ds;											
+			read ee;											
+			
+			while(4 < ba) {										
+				print ba; 										
+				cs = ba + 60/ce;								
+				ce = 3-fass+4;									
+			}
+			
+			fass = 20*(4)+ce-20+(1*7)/0+9;						
+			
+		} else {
+			print ce;											
+		}
+	}
+	
+	print ba;													
+}

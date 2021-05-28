@@ -1,0 +1,75 @@
+1 - Follows, Parent, no common synonym (Valid)
+print p; stmt s; assign a; while w;
+Select p.stmt# such that Follows(p, s) and Parent(w, a)
+6,39,42,53,70,88,96,116,184,213,214,229,249
+5000
+2 - Follows, Parent*, 1 common synonym (Valid)
+call c; stmt s; while w;
+Select c.procName such that Follows(s, c) such that Parent*(w, c)
+Bw,fm,n
+5000
+3 - Follows, Calls*, no common synonym (Valid)
+stmt s; prog_line n; procedure p;
+Select n such that Follows(n, s) and Calls*("R", p)
+3,6,7,10,11,20,25,27,28,32,39,40,42,44,46,47,50,52,53,55,56,57,68,70,76,77,78,79,80,82,85,86,87,88,92,95,96,97,98,100,101,103,104,108,109,113,115,116,117,118,124,125,136,138,151,152,153,155,156,159,161,170,173,175,183,184,194,195,196,197,202,203,204,205,206,207,213,214,215,216,219,220,229,230,231,234,235,236,238,239,241,242,244,248,249,250,254,255,256,258
+5000
+4 - Follows, Affects*, pattern, no common synonyms (Valid)
+stmt s, s1; assign a, a1; variable v;
+Select a such that Follows(s, s1) and Affects*(a, a1) pattern a(v, _"Rd"_)
+4,8,18,27,58,64,66,68,71,77,80,109,111,134,138,146,163,165,181,185,188,191,197,205,217,231,238,251,252,262
+5000
+5 - Follows*, Parent, pattern (Valid)
+assign a; if ifs; stmt s; variable v;
+Select <ifs, a> such that Follows*(s, a) such that Parent(ifs, a) pattern ifs("D", _, _)
+5 8,11 23,69 71,107 109,124 129,215 218
+5000
+6 - Uses, Follows* (Valid)
+stmt s1, s2; procedure p; variable v;
+Select v with v.varName = "hN" such that Uses(p, v) with "R" = p.procName such that Follows*(s1, s2)
+hN
+5000
+7 - Uses, Parent, BOOLEAN return (Valid)
+stmt s; call c; variable v; assign a; if ifs;
+Select BOOLEAN such that Uses(c, "RV") and Parent(ifs, a)
+TRUE
+5000
+8 - Modifies, Next*, no common synonyms,  (Valid)
+stmt s, s1; assign a;
+Select s with a.stmt# = s.stmt# such that Modifies(s, "u") and Next*(a, s1)
+48,62,63,163,179,189,193,237,251
+5000
+9 - Calls, Uses, return type tuple (Valid)
+procedure p, q; while w;
+Select <p, w, q> such that Calls(p, q) and Uses(w, "D")
+Bw 100 fm,Bw 100 qf,Bw 110 fm,Bw 110 qf,Bw 112 fm,Bw 112 qf,Bw 117 fm,Bw 117 qf,Bw 125 fm,Bw 125 qf,Bw 130 fm,Bw 130 qf,Bw 131 fm,Bw 131 qf,Bw 136 fm,Bw 136 qf,Bw 145 fm,Bw 145 qf,Bw 15 fm,Bw 15 qf,Bw 151 fm,Bw 151 qf,Bw 155 fm,Bw 155 qf,Bw 159 fm,Bw 159 qf,Bw 166 fm,Bw 166 qf,Bw 168 fm,Bw 168 qf,Bw 175 fm,Bw 175 qf,Bw 183 fm,Bw 183 qf,Bw 186 fm,Bw 186 qf,Bw 190 fm,Bw 190 qf,Bw 195 fm,Bw 195 qf,Bw 196 fm,Bw 196 qf,Bw 2 fm,Bw 2 qf,Bw 20 fm,Bw 20 qf,Bw 200 fm,Bw 200 qf,Bw 201 fm,Bw 201 qf,Bw 204 fm,Bw 204 qf,Bw 21 fm,Bw 21 qf,Bw 232 fm,Bw 232 qf,Bw 233 fm,Bw 233 qf,Bw 239 fm,Bw 239 qf,Bw 245 fm,Bw 245 qf,Bw 248 fm,Bw 248 qf,Bw 254 fm,Bw 254 qf,Bw 3 fm,Bw 3 qf,Bw 31 fm,Bw 31 qf,Bw 40 fm,Bw 40 qf,Bw 43 fm,Bw 43 qf,Bw 46 fm,Bw 46 qf,Bw 47 fm,Bw 47 qf,Bw 55 fm,Bw 55 qf,Bw 56 fm,Bw 56 qf,Bw 59 fm,Bw 59 qf,Bw 60 fm,Bw 60 qf,Bw 65 fm,Bw 65 qf,Bw 72 fm,Bw 72 qf,Bw 85 fm,Bw 85 qf,Bw 87 fm,Bw 87 qf,Bw 90 fm,Bw 90 qf,Bw 92 fm,Bw 92 qf,Bw 95 fm,Bw 95 qf,KZ 100 Bw,KZ 100 fm,KZ 100 n,KZ 100 qf,KZ 110 Bw,KZ 110 fm,KZ 110 n,KZ 110 qf,KZ 112 Bw,KZ 112 fm,KZ 112 n,KZ 112 qf,KZ 117 Bw,KZ 117 fm,KZ 117 n,KZ 117 qf,KZ 125 Bw,KZ 125 fm,KZ 125 n,KZ 125 qf,KZ 130 Bw,KZ 130 fm,KZ 130 n,KZ 130 qf,KZ 131 Bw,KZ 131 fm,KZ 131 n,KZ 131 qf,KZ 136 Bw,KZ 136 fm,KZ 136 n,KZ 136 qf,KZ 145 Bw,KZ 145 fm,KZ 145 n,KZ 145 qf,KZ 15 Bw,KZ 15 fm,KZ 15 n,KZ 15 qf,KZ 151 Bw,KZ 151 fm,KZ 151 n,KZ 151 qf,KZ 155 Bw,KZ 155 fm,KZ 155 n,KZ 155 qf,KZ 159 Bw,KZ 159 fm,KZ 159 n,KZ 159 qf,KZ 166 Bw,KZ 166 fm,KZ 166 n,KZ 166 qf,KZ 168 Bw,KZ 168 fm,KZ 168 n,KZ 168 qf,KZ 175 Bw,KZ 175 fm,KZ 175 n,KZ 175 qf,KZ 183 Bw,KZ 183 fm,KZ 183 n,KZ 183 qf,KZ 186 Bw,KZ 186 fm,KZ 186 n,KZ 186 qf,KZ 190 Bw,KZ 190 fm,KZ 190 n,KZ 190 qf,KZ 195 Bw,KZ 195 fm,KZ 195 n,KZ 195 qf,KZ 196 Bw,KZ 196 fm,KZ 196 n,KZ 196 qf,KZ 2 Bw,KZ 2 fm,KZ 2 n,KZ 2 qf,KZ 20 Bw,KZ 20 fm,KZ 20 n,KZ 20 qf,KZ 200 Bw,KZ 200 fm,KZ 200 n,KZ 200 qf,KZ 201 Bw,KZ 201 fm,KZ 201 n,KZ 201 qf,KZ 204 Bw,KZ 204 fm,KZ 204 n,KZ 204 qf,KZ 21 Bw,KZ 21 fm,KZ 21 n,KZ 21 qf,KZ 232 Bw,KZ 232 fm,KZ 232 n,KZ 232 qf,KZ 233 Bw,KZ 233 fm,KZ 233 n,KZ 233 qf,KZ 239 Bw,KZ 239 fm,KZ 239 n,KZ 239 qf,KZ 245 Bw,KZ 245 fm,KZ 245 n,KZ 245 qf,KZ 248 Bw,KZ 248 fm,KZ 248 n,KZ 248 qf,KZ 254 Bw,KZ 254 fm,KZ 254 n,KZ 254 qf,KZ 3 Bw,KZ 3 fm,KZ 3 n,KZ 3 qf,KZ 31 Bw,KZ 31 fm,KZ 31 n,KZ 31 qf,KZ 40 Bw,KZ 40 fm,KZ 40 n,KZ 40 qf,KZ 43 Bw,KZ 43 fm,KZ 43 n,KZ 43 qf,KZ 46 Bw,KZ 46 fm,KZ 46 n,KZ 46 qf,KZ 47 Bw,KZ 47 fm,KZ 47 n,KZ 47 qf,KZ 55 Bw,KZ 55 fm,KZ 55 n,KZ 55 qf,KZ 56 Bw,KZ 56 fm,KZ 56 n,KZ 56 qf,KZ 59 Bw,KZ 59 fm,KZ 59 n,KZ 59 qf,KZ 60 Bw,KZ 60 fm,KZ 60 n,KZ 60 qf,KZ 65 Bw,KZ 65 fm,KZ 65 n,KZ 65 qf,KZ 72 Bw,KZ 72 fm,KZ 72 n,KZ 72 qf,KZ 85 Bw,KZ 85 fm,KZ 85 n,KZ 85 qf,KZ 87 Bw,KZ 87 fm,KZ 87 n,KZ 87 qf,KZ 90 Bw,KZ 90 fm,KZ 90 n,KZ 90 qf,KZ 92 Bw,KZ 92 fm,KZ 92 n,KZ 92 qf,KZ 95 Bw,KZ 95 fm,KZ 95 n,KZ 95 qf,R 100 KZ,R 100 qf,R 110 KZ,R 110 qf,R 112 KZ,R 112 qf,R 117 KZ,R 117 qf,R 125 KZ,R 125 qf,R 130 KZ,R 130 qf,R 131 KZ,R 131 qf,R 136 KZ,R 136 qf,R 145 KZ,R 145 qf,R 15 KZ,R 15 qf,R 151 KZ,R 151 qf,R 155 KZ,R 155 qf,R 159 KZ,R 159 qf,R 166 KZ,R 166 qf,R 168 KZ,R 168 qf,R 175 KZ,R 175 qf,R 183 KZ,R 183 qf,R 186 KZ,R 186 qf,R 190 KZ,R 190 qf,R 195 KZ,R 195 qf,R 196 KZ,R 196 qf,R 2 KZ,R 2 qf,R 20 KZ,R 20 qf,R 200 KZ,R 200 qf,R 201 KZ,R 201 qf,R 204 KZ,R 204 qf,R 21 KZ,R 21 qf,R 232 KZ,R 232 qf,R 233 KZ,R 233 qf,R 239 KZ,R 239 qf,R 245 KZ,R 245 qf,R 248 KZ,R 248 qf,R 254 KZ,R 254 qf,R 3 KZ,R 3 qf,R 31 KZ,R 31 qf,R 40 KZ,R 40 qf,R 43 KZ,R 43 qf,R 46 KZ,R 46 qf,R 47 KZ,R 47 qf,R 55 KZ,R 55 qf,R 56 KZ,R 56 qf,R 59 KZ,R 59 qf,R 60 KZ,R 60 qf,R 65 KZ,R 65 qf,R 72 KZ,R 72 qf,R 85 KZ,R 85 qf,R 87 KZ,R 87 qf,R 90 KZ,R 90 qf,R 92 KZ,R 92 qf,R 95 KZ,R 95 qf,hE 100 n,hE 110 n,hE 112 n,hE 117 n,hE 125 n,hE 130 n,hE 131 n,hE 136 n,hE 145 n,hE 15 n,hE 151 n,hE 155 n,hE 159 n,hE 166 n,hE 168 n,hE 175 n,hE 183 n,hE 186 n,hE 190 n,hE 195 n,hE 196 n,hE 2 n,hE 20 n,hE 200 n,hE 201 n,hE 204 n,hE 21 n,hE 232 n,hE 233 n,hE 239 n,hE 245 n,hE 248 n,hE 254 n,hE 3 n,hE 31 n,hE 40 n,hE 43 n,hE 46 n,hE 47 n,hE 55 n,hE 56 n,hE 59 n,hE 60 n,hE 65 n,hE 72 n,hE 85 n,hE 87 n,hE 90 n,hE 92 n,hE 95 n
+5000
+10 - Next*, Affects*, 1 common synonym (Valid)
+stmt s; assign a1, a2; variable v;
+Select a1 pattern a1(v, _"RV"_) such that Next*(a1, s) and Affects*(a1, a2)
+41,51,71,102,122,129,158,181,188,189,193,197,202,211,221,237,238,240
+5000
+11 - Affects*, Follows*, no common synonym, procedure hE (Valid)
+stmt s; assign a; prog_line n;
+Select BOOLEAN such that Affects*(a, n) and Follows*(194, 227)
+FALSE
+5000
+12 - Follows, Parent, Uses, Calls, Next, pattern pattern,  1 common synonym (Valid)
+stmt s1, s2; assign a; if ifs; procedure p, q; variable v;
+Select a such that Follows(a, s1) and Parent(ifs, a) and Uses(a, v) and Calls(p, q) and Next(a, s2) pattern a("Rd", _) pattern ifs("hN", _, _)
+109,138
+5000
+13 - Calls*, Next*, Affects*, Affects, Follows (Valid)
+procedure p; stmt s; assign a1, a2; while w;
+Select a1 such that Calls*(p, "qf") and Next*(a1, w) and Affects*(a1, a2) pattern a1("RV", _) such that Affects(a1, a2) and Follows(a1, w) pattern w("RV", _)
+238
+5000
+14 - Follows*, Parent*, Uses, Calls, Affects (Valid)
+stmt s; procedure p, q; constant c; assign a1, a2; while w; variable v;
+Select <s.stmt#, q.procName> with c.value = s.stmt# such that Follows*(s, a1) and Parent*(w, s) and Uses(s, v) and Calls(p, q) with "KZ" = p.procName such that Affects(a1, a2)
+6 Bw,6 fm,6 n,6 qf
+5000
+15 - Modifies, Affects*, Follows*, Parent*, Next* (Valid)
+stmt s1, s2; variable v; procedure p; assign a1, a2; while w;
+Select s1 such that Modifies(p, v) and Affects*(a1, a2) and Follows*(136, s1) and Parent*(w, s1) and Next*(a1, s1) with "fm" = p.procName with v.varName = "RV"
+138,139
+5000

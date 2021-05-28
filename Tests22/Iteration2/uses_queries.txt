@@ -1,0 +1,170 @@
+1 - First synonym, second wildcard (Valid)
+procedure pr; stmt s;
+Select s such that Uses(pr, _)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16
+5000
+2 - First synonym, second wildcard (Valid)
+assign a;
+Select a such that Uses(a, _)
+2, 5, 9, 14
+5000
+3 - First synonym, second wildcard (Valid)
+print p;
+Select p such that Uses(p, _)
+3, 10, 13, 15, 16
+5000
+4 - First synonym, second wildcard (Valid)
+if ifs;
+Select ifs such that Uses(ifs, _)
+4
+5000
+5 - First synonym, second wildcard (Valid)
+while w;
+Select w such that Uses(w, _)
+8
+5000
+6 - First synonym, second wildcard (Valid)
+call c;
+Select c such that Uses(c, _)
+7
+5000
+7 - First synonym, second wildcard (Invalid)
+read r;
+Select r such that Uses(r, _)
+none
+5000
+8 - First stmt#, second varName (Valid)
+stmt s;
+Select s such that Uses(2, "facebook")
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16
+5000
+9 - First stmt#, second synonym (Valid)
+variable v;
+Select v such that Uses(5, v)
+youtube, reddit
+5000
+10 - First synonym, second varName (Valid)
+assign a;
+Select a such that Uses(a, "reddit")
+5
+5000
+11 - First synonym, second varName (Valid)
+print p;
+Select p such that Uses(p, "discord")
+10
+5000
+12 - First synonym, second varName (Valid)
+if ifs;
+Select ifs such that Uses(ifs, "youtube")
+4
+5000
+13 - First synonym, second varName (Valid)
+while w;
+Select w such that Uses(w, "sheets")
+8
+5000
+14 - First synonym, second varName (Valid)
+procedure p;
+Select p such that Uses(p, "two")
+google, yahoo
+5000
+15 - First synonym, second varName (Valid)
+call c;
+Select c such that Uses(c, "eight")
+7
+5000
+16 - Double quote for first input (Invalid)
+stmt s; 
+Select s such that Uses("2", "facebook")
+none
+5000
+17 - varName not in double quotes (Invalid)
+stmt s;
+Select s such that Uses(2, facebook)
+none
+5000
+18 - First synonym, second synonym (Valid)
+assign a1; variable v;
+Select a1 such that Uses(a1, v)
+2, 5, 9, 14
+5000
+19 - First synonym, second synonym (Valid)
+print p; variable v;
+Select p.varName such that Uses(p, v)
+youtube, discord, two, eight, results
+5000
+20 - First synonym, second synonym (Valid)
+if ifs; variable v;
+Select ifs.stmt# such that Uses(ifs, v)
+4
+5000
+21 - First synonym, second synonym (Valid)
+while w; variable v;
+Select w such that Uses(w, v)
+8
+5000
+22 - First synonym, second synonym (Valid)
+procedure p; variable v;
+Select p.procName such that Uses(p, v)
+google, yahoo, search 
+5000
+23 - First synonym, second synonym (Valid)
+call c; variable v;
+Select c.procName such that Uses(c, v)
+yahoo
+5000
+24 - First synonym, second synonym (Invalid)
+assign a1; variable v;
+Select a1 such that Uses(v, a1)
+none
+5000
+25 - First synonym, second synonym (Invalid)
+read r; variable v;
+Select r such that Uses(r, v)
+none
+5000
+26 - First synonym, second synonym (Valid; variable in the if statement)
+if ifs;
+Select ifs such that Uses(ifs, "facebook")
+4
+5000
+27 - First synonym, second synonym (Valid; variable in the container statement)
+if ifs;
+Select ifs.stmt# such that Uses(ifs, "youtube")
+4
+5000
+28 - First synonym, second synonym (Valid; variable in the while statement)
+while w;
+Select w such that Uses(w, "docs")
+8
+5000
+29 - First synonym, second synonym (Valid; variable in the container statement)
+while w;
+Select w such that Uses(w, "sheets")
+8
+5000
+30 - Variable synonym first (Invalid)
+if ifs; variable v;
+Select ifs such that Uses(v, ifs)
+none
+5000
+31 - Variable synonym first (Invalid)
+while w; variable v;
+Select w such that Uses(v, w)
+none
+5000
+32 - Both wildcard (Invalid)
+stmt s;
+Select s such that Uses(_, _)
+none
+5000
+33 - First wildcard (Invalid)
+variable v;
+Select v such that Uses(_, v)
+none
+5000
+34 - First read, second wildcard (Invalid; not declared synonym)
+assign a;
+Select a such that Uses(r, _)
+none
+5000

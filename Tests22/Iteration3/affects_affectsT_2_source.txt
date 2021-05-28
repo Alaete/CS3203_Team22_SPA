@@ -1,0 +1,82 @@
+procedure one {
+	read a;
+	read b;
+	read c;
+	read d;
+	read e;
+	read f;
+	read g;
+}
+
+procedure two {
+	a = 1;
+	b = a;
+	c = b * 3 + 2 * a;
+	d = c / 2 * 4 + a;
+	e = g/c;
+	a = c * 3;
+	f = f/f;
+	g = a * b + c - d / e * f;
+	h = 20 * 5;
+	
+	if (e == f) then {
+		print e;
+		f = e;
+		call one;
+		print e;
+	} else {
+		c = b;
+		print b;
+		read b;
+		b = b + c + e;
+		print e;
+		print b;
+	}
+	
+	while (c <= c) {
+		d = d + e;
+		g = g + a;
+		
+		while (g >= b) {
+			a = b;
+			b = d;
+			while (a >= 20) {
+				e = h;
+				b = c;
+				call one;
+			}
+			g = a + b + c + e;
+		}
+		
+	}
+	a = d + e / f * g - h;
+	if (a < 2) then {
+		call three;	
+	} else {
+		b = g;
+		while (e > 100) {
+			if (g < 10) then {
+				while (h < 69) {
+					print g;
+					print b;
+				}
+				read b;
+			} else {
+				print b;
+			}
+		}
+	}
+	
+	c = a + b - c / d % e - f * g + h;
+	h = h;
+}
+
+procedure three {
+	a = a;
+	b = b;
+	c = c;
+	d = d;
+	e = e;
+	f = f;
+	g = g;
+}

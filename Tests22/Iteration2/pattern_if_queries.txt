@@ -1,0 +1,70 @@
+1 - First synonym, second wildcard, third wildcard (Valid)
+if ifs; variable v;
+Select BOOLEAN pattern ifs(v, _, _)
+TRUE
+5000
+2 - First synonym, second wildcard, third wildcard (Valid)
+if ifs; variable v;
+Select ifs pattern ifs(v, _, _)
+2, 3, 7, 14, 16, 18, 20, 22, 24, 32 
+5000
+3 - First wildcard, second wildcard, third wildcard (Valid)
+if ifs;
+Select ifs pattern ifs(_, _, _)
+2, 3, 7, 14, 16, 18, 20, 22, 24, 32 
+5000
+4 - First synonym, second wildcard, third wildcard (Valid)
+if ifs; variable v;
+Select ifs.stmt# pattern ifs(v, _, _)
+2, 3, 7, 14, 16, 18, 20, 22, 24, 32 
+5000
+5 - First variableName, second wildcard, third wildcard (Valid)
+if ifs;
+Select ifs pattern ifs("JU", _, _)
+3, 7, 18, 20, 32
+5000
+5 - First variableName, second wildcard, third wildcard (Valid)
+if ifs;
+Select ifs pattern ifs("A", _, _)
+2, 16, 18, 20
+5000
+6 - First variableName, second wildcard, third wildcard (Valid)
+if ifs;
+Select ifs pattern ifs("TG", _, _)
+7
+5000
+7 - First variableName, second wildcard, third wildcard (Valid)
+if ifs;
+Select ifs pattern ifs("Z", _, _)
+14, 18, 20, 22
+5000
+8 - First variableName, second wildcard, third wildcard (Valid)
+if ifs;
+Select ifs pattern ifs("vj", _, _)
+20
+5000
+9 - First variableName, second wildcard, third wildcard (Valid)
+if ifs;
+Select ifs pattern ifs("H", _, _)
+20, 22
+5000
+10 - First variableName, second wildcard, third wildcard (Valid)
+if ifs;
+Select ifs pattern ifs("Jm", _, _)
+16, 22
+5000
+11 - First variableName, second wildcard, third wildcard (Invalid)
+if ifs;
+Select ifs pattern ifs("x", _, _)
+none
+5000
+12 - First variableName, second wildcard, third wildcard (Invalid)
+if ifs;
+Select ifs pattern ifs("B", _, _)
+none
+5000
+13 - First variableName, second wildcard, third wildcard (Invalid)
+if ifs;
+Select ifs pattern ifs("bh", _, _)
+none
+5000

@@ -1,0 +1,30 @@
+procedure main {
+	print Line12MissingBrace;
+    if ( ( 9 <= oe) || ( c < J)) then {
+        read  e;
+        e = 9 + J;
+        print  c;
+        if ( ( 1 != c) || ( 8 <= 3)) then {
+            print  oe;
+        } else {
+            if (!( oe <= J)) then {
+                print  e;
+                if ( ( 9 != 8) || ( 1 == 1)) then 
+                    print  J;
+                } else {
+                    c = 1 - 3;
+                }
+            } else {
+                print  c;
+                read  oe;
+            }
+            if ( 1 != oe) then {
+                print  e;
+            } else {
+                e = YE + YE;
+            }
+        }
+    } else {
+        e = e - 8;
+    }
+print i; }

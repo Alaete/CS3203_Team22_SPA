@@ -1,0 +1,160 @@
+1 - First synonym, second wildcard (Valid)
+procedure pr; stmt s;
+Select s such that Modifies(pr, _)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13
+5000
+2 - First synonym, second wildcard (Valid)
+assign a;
+Select a such that Modifies(a, _)
+3, 12, 13
+5000
+3 - First synonym, second wildcard (Valid)
+read r;
+Select r such that Modifies(r, _)
+2, 7, 8, 10
+5000
+4 - First synonym, second wildcard (Valid)
+if ifs;
+Select ifs such that Modifies(ifs, _)
+4
+5000
+5 - First synonym, second wildcard (Valid)
+while w;
+Select w such that Modifies(w, _)
+11
+5000
+6 - First synonym, second wildcard (Valid)
+call c;
+Select c such that Modifies(c, _)
+1, 5, 6
+5000
+7 - First synonym, second wildcard (Invalid)
+print p;
+Select p such that Modifies(p, _)
+none
+5000
+8 - First stmt#, second varName (Valid)
+stmt s;
+Select s such that Modifies(2, "var1")
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13
+5000
+9 - First stmt#, second synonym (Valid)
+variable v;
+Select v such that Modifies(5, v)
+oneplus, red
+5000
+10 - First synonym, second varName (Valid)
+assign a;
+Select a such that Modifies(a, "red")
+13
+5000
+11 - First synonym, second varName (Valid)
+read r;
+Select r such that Modifies(r, "var1")
+2
+5000
+12 - First synonym, second varName (Valid)
+if ifs;
+Select ifs such that Modifies(ifs, "oneplus")
+4
+5000
+13 - First synonym, second varName (Valid)
+while w;
+Select w such that Modifies(w, "oneplus")
+11
+5000
+14 - First synonym, second varName (Valid)
+procedure p;
+Select p such that Modifies(p, "three")
+three, two, one
+5000
+15 - First synonym, second varName (Valid)
+call c;
+Select c such that Modifies(c, "three")
+6, 1
+5000
+16 - Double quote for first input (Invalid)
+stmt s; 
+Select s such that Modifies("3", "var2")
+none
+5000
+17 - varName not in double quotes (Invalid)
+stmt s;
+Select s such that Modifies(3, var2)
+none
+5000
+18 - First synonym, second synonym (Valid)
+assign a1; variable v;
+Select a1 such that Modifies(a1, v)
+3, 12, 13
+5000
+19 - First synonym, second synonym (Valid)
+read r; variable v;
+Select r.varName such that Modifies(r, v)
+var1, seven, six, three
+5000
+20 - First synonym, second synonym (Valid)
+if ifs; variable v;
+Select ifs.stmt# such that Modifies(ifs, v)
+4
+5000
+21 - First synonym, second synonym (Valid)
+while w; variable v;
+Select w such that Modifies(w, v)
+11
+5000
+22 - First synonym, second synonym (Valid)
+procedure p; variable v;
+Select p.procName such that Modifies(p, v)
+one, two, three, four
+5000
+23 - First synonym, second synonym (Valid)
+call c; variable v;
+Select c.procName such that Modifies(c, v)
+two, four, three
+5000
+24 - First synonym, second synonym (Invalid)
+assign a1; variable v;
+Select a1 such that Modifies(v, a1)
+none
+5000
+25 - First synonym, second synonym (Invalid)
+print p; variable v;
+Select p such that Modifies(p, v)
+none
+5000
+26 - First synonym, second synonym (Valid; variable in the container statement)
+if ifs;
+Select ifs.stmt# such that Modifies(ifs, "seven")
+4
+5000
+27 - First synonym, second synonym (Valid; variable in the container statement)
+while w;
+Select w such that Modifies(w, "oneplus")
+11
+5000
+28 - Variable synonym first (Invalid)
+if ifs; variable v;
+Select ifs such that Modifies(v, ifs)
+none
+5000
+29 - Variable synonym first (Invalid)
+while w; variable v;
+Select w such that Modifies(v, w)
+none
+5000
+30 - Both wildcard (Invalid)
+stmt s;
+Select s such that Modifies(_, _)
+none
+5000
+31 - First wildcard (Invalid)
+variable v;
+Select a such that Modifies(_, v)
+none
+5000
+32 - First read, second wildcard (Invalid; not declared synonym)
+assign a;
+Select a such that Modifies(r, _)
+none
+5000

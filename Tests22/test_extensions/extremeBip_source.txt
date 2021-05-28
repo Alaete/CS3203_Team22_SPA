@@ -1,0 +1,171 @@
+procedure olaf {
+    y = 10 * gold / 50 - drive;
+    read brown;
+
+    while (y == 50) {
+
+        brown = 2 + rice * gold / 4 + pink * noodles * 5;
+
+        if (!(brown == pink)) then {
+            while (((purple + 1) > 9) && ((brown != pink) || (beige >= maroon))) {
+
+                while (colour == 10) {
+
+                    if ((orange - 3) < brown) then {
+
+                        if (40 > 1) then {
+                            brown = 2 + purple;
+                            print brown;
+                        } else {
+                            read violet;
+                        }
+
+                        pink = 133;
+                    } else {
+                        maroon = 90;
+                    }
+
+                    while (colour % 2 == 0) {
+                        read colour;
+                        ginger = colour % 2;
+                    }
+
+                    if (((5 - 1) + 2) > (pink * 6)) then {
+                        while ((pink / pink * maroon) != (purple + 40)) {
+                            print red;
+                        }
+                    } else {
+                        read violet;
+                    }
+                }
+            }
+
+        } else {
+            while (3 > (76 / purple)) {
+                print maroon;
+                read ginger;
+            }
+        }
+
+        if (!(purple != 0)) then {
+            beige = 0;
+        } else {
+            print violet;
+        }
+    }
+
+    if (pink >= e) then {
+        purple = colour + y;
+        print brown;
+    } else {
+        read gold;
+        maroon = 0;
+    }
+
+    pink = 2;
+}
+
+procedure belle {
+    read blue;
+    while (yellow != 0) {
+        silver = 5 + (10 * (mint / violet) + maroon % (4 - 1 * (purple / 2)) + frost);
+        print silver;
+
+        if (colour % 4 != 0) then {
+            call olaf;
+        } else {
+            read frost;
+            print pearl;
+
+            while (red < 33) {
+                print cider;
+                bronze = red * 43;
+                red = 3 + brown + orange;
+                call elsa;
+            }
+            pearl = (beige + brown) * 3 * 2 + 53 + silver;
+            frost = brown * pink + frost;
+        }
+
+    }
+    call olaf;
+}
+
+procedure simba {
+	if ((blue >= rose) || (rose == 300)) then {
+
+            while ((squash > tangerine) && ((tangerine <= honey) || (honey != squash))) {
+                rose = rose / 34;
+                read rose;
+                blue = rose;
+            }
+            call belle;
+
+            if (d < 0) then {
+                pecan = blue - 32 / 4;
+                lime = brown - (pink / maroon + 57);
+            } else {
+                read silver;
+            }
+
+        } else {
+            lime = lime * pecan;
+            yellow = 42 + 125 * 10 / 5 + (41 % 200);
+        }
+}
+
+procedure jasmine {
+    call simba;
+    while (140 < 300) {
+        mint = mint * 32 / 4;
+        call belle;
+        mint = mint + 1;
+        print crystal;
+    }
+    bumblebee = pecan + 1;
+}
+
+procedure elsa {
+    yellow = frost;
+    red = yellow;
+}
+
+procedure aurora {
+    if (snow >= (indigo + 1)) then {
+        wine = 3529;
+        colour = wine;
+        call olaf;
+    } else {
+        call olaf;
+        snow = snow / wine;
+        read wine;
+        indigo = wine * indigo;
+    }
+}
+
+procedure anna {
+    read sky;
+    while (500 == 2000) {
+        if (sky < orchid) then {
+            sky = orchid;
+            print sky;
+            lavender = lavender;
+            berry = mint;
+            berry = 20;
+            if (berry == 20) then {
+                navy = berry;
+            } else {
+                read berry;
+            }
+
+
+        } else {
+            orchid = sky;
+            orchid = navy;
+            magenta = magenta % 4;
+            magenta = magenta * 20;
+            lavender = lavender;
+        }
+    }
+    navy = 98 * berry;
+}

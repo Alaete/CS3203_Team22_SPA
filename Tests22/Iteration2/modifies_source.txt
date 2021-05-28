@@ -1,0 +1,27 @@
+procedure one {
+	call two;					
+	read var1;					
+	var2 = var1 + 2 * var3;		
+}
+
+procedure two {
+	if (six < eight) then {		
+		call four;				
+	} else {
+		call three;				
+		read seven;				
+	}	
+	read six;					
+	print seven;				
+}
+
+procedure three {
+	read three;					
+}
+
+procedure four {
+	while (huawei < samsung) {	
+		oneplus = vivo + 90;	
+	}
+	red = hydrogen + one;		
+}

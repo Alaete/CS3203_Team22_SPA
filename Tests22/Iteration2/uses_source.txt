@@ -1,0 +1,35 @@
+procedure google {
+	read facebook;									
+	reddit = 1 + facebook * 5;						
+	
+	print youtube;									
+	
+	if ((reddit < 40) || (facebook > 100)) then {		
+		wikia = youtube * 3 + (5 + reddit);			
+		call bing;									
+	} else {
+		call yahoo;									
+	}
+	
+	while(docs < 100) {								
+		docs = sheets * 2;							
+	}
+	
+	print discord;									
+	
+}
+
+procedure bing {
+	read wolfram;									
+}
+
+procedure yahoo {
+	read one;										
+	print two;										
+	two = one + eight;									
+	print eight;									
+}
+
+procedure search {
+	print results;									
+}

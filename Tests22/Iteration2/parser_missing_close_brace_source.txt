@@ -1,0 +1,57 @@
+procedure main {
+    print line25MissingBrace;
+	read  w;
+    read  I;
+    print  N;
+    print  m;
+    while (!( ( As != 9) && ( 17 < 2))) {
+        read  As;
+        if ( ( ( 2 < 4) || ( X - 17 == aD)) || ( ( As <= 27 - 9) || ( b == 17))) then {
+            print  I;
+            if ( ( ( 9 >= I) || ( As > w)) && ( X < X)) then {
+                read  p;
+            } else {
+                if ( ( L >= 9) || ( 27 == 8)) then {
+                    read  w;
+                } else {
+                    WE = X + Tt % As;
+                }
+                print  L;
+            }
+            I = 4 * Tt;
+        } else {
+            if (!( ( P <= L + p) || ( 17 > 27))) then {
+                print  I;
+             else {
+                read  p;
+            }
+            b = sB + 4 + 9;
+        }
+        print  As;
+        print  I;
+    }
+    if ( aD < m) then {
+        m = 4 % 9;
+        if (!( P > 7 + 17)) then {
+            read  L;
+        } else {
+            print  X;
+            print  m;
+            while ( 9 != 58) {
+                if ( ( ( aD == P - 58) && ( 7 - 2 > 58)) && ( X - P >= 17)) then {
+                    aD = WE + 27 - 9 % As;
+                    read  m;
+                } else {
+                    read  p;
+                    if ( 4 < X) then {
+                        read  w;
+                    } else {
+                        read  N;
+                    }
+                }
+            }
+        }
+    } else {
+        N = m / 58;
+    }
+print i; }

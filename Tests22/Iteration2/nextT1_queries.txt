@@ -1,0 +1,90 @@
+1 - Both wildcards (valid)
+
+Select BOOLEAN such that Next*(_, _)
+TRUE
+5000
+2 - First wildcard, second statement number (valid)
+
+Select BOOLEAN such that Next*(_, 3)
+TRUE
+5000
+3 - First statement number, second wildcard (valid)
+
+Select BOOLEAN such that Next*(10, _)
+TRUE
+5000 
+4 - First invalid synonym type, second wildcard (invalid)
+constant c;
+Select BOOLEAN such that Next*(c, _)
+none
+5000
+5 - First statement number, second statement number (valid)
+
+Select BOOLEAN such that Next*(3, 7)
+TRUE
+5000
+6 - First synonym, second statement number (valid)
+stmt s;
+Select s such that Next*(s, 3)
+1, 2
+5000
+7 - First statement number, second synonym (valid)
+stmt s;
+Select s such that Next*(12, s)
+12, 13, 14, 15, 16, 17, 19
+5000
+8 - Both synonym (valid)
+stmt s1, s2;
+Select BOOLEAN such that Next*(s1, s2)
+TRUE
+5000
+9 - First wildcard, second statement number (valid; nothing can execute before statement 1)
+
+Select BOOLEAN such that Next*(_, 1)
+FALSE
+5000
+10 - First statement number, second wildcard (valid; nothing can be executed after statement 19)
+
+Select BOOLEAN such that Next*(19, _)
+FALSE
+5000
+11 - First synonym, second statement number (valid; checking while loop)
+stmt s;
+Select s such that Next*(20, s)
+20, 21, 22, 23, 24
+5000
+12 - First synonym, second statement number (valid; checking correctness of if)
+stmt s;
+Select s such that Next*(s, 18)
+1, 2, 3, 4, 5, 6, 7, 8
+5000
+13 - First statement number, second synonym (valid; checking correctness of if)
+stmt s;
+Select s such that Next*(8, s)
+9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19
+5000
+14 - First synonym, second statement number (valid; checking print statments)
+print pr;
+Select pr such that Next*(pr, 23)
+22
+5000
+15 - First statement number, second synonym (valid; checking print statments)
+print pr;
+Select pr such that Next*(8, pr)
+18, 19
+5000
+16 - First synonym, second statement number (valid; checking read statements)
+read r;
+Select r such that Next*(r, 11)
+2, 5, 6, 10
+5000
+17 - First statement number, second synonym (valid; checking assign statements)
+assign a;
+Select a such that Next*(14, a)
+15
+5000
+18 - First statement number, second synonym (valid; checking while statements)
+while w;
+Select w such that Next*(w, 17)
+12, 13
+5000
